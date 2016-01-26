@@ -1,0 +1,448 @@
+---
+layout: default
+title: "Brand Guide"
+---
+
+
+<script type="text/javascript">
+
+	function BrandCtrl($scope) {
+		$scope.colors = [  
+
+		{name:'Grey', hex:"4d4d4d", pantone:"", cmyk:"" , importance:"32" , type:"dark"},
+		{name:'Grey', hex:"969696", pantone:"", cmyk:"" , importance:"16" , type:""},
+		{name:'Grey', hex:"cacaca", pantone:"", cmyk:"" , importance:"4" , type:"light"}, 
+		{name:'Grey', hex:"f2f2f2", pantone:"", cmyk:"" , importance:"4" , type:"lightest"}, 
+
+
+		{name:'Sun', hex:"c28800", pantone:"", cmyk:"" , importance:"16" , type:"dark"},
+		{name:'Sun', hex:"ffcf04", pantone:"", cmyk:"" , importance:"16" , type:""},
+		{name:'Sun', hex:"ffe782", pantone:"", cmyk:"" , importance:"16" , type:"light"},
+		{name:'Sun', hex:"fff5cd", pantone:"", cmyk:"" , importance:"4" , type:"lightest"}, 
+
+
+		{name:'Orange', hex:"c36000", pantone:"", cmyk:"" , importance:"16" , type:"dark"},
+		{name:'Orange', hex:"ff8a1a", pantone:"", cmyk:"" , importance:"16" , type:""},
+		{name:'Orange', hex:"f8bd85", pantone:"", cmyk:"" , importance:"16" , type:"light"},
+		{name:'Orange', hex:"ffe7cf", pantone:"", cmyk:"" , importance:"4" , type:"lightest"}, 
+
+
+		{name:'Cherry', hex:"9c0300", pantone:"", cmyk:"" , importance:"16" , type:"dark"},
+		{name:'Cherry', hex:"e73b37", pantone:"", cmyk:"" , importance:"16" , type:""},
+		{name:'Cherry', hex:"ec9694", pantone:"", cmyk:"" , importance:"16" , type:"light"},
+		{name:'Cherry', hex:"ffdad9", pantone:"", cmyk:"" , importance:"4" , type:"lightest"}, 
+
+
+		{name:'Watermelon', hex:"b12c37", pantone:"", cmyk:"" , importance:"4" , type:"dark"},
+		{name:'Watermelon', hex:"f75462", pantone:"", cmyk:"" , importance:"4" , type:""},
+		{name:'Watermelon', hex:"fba9b0", pantone:"", cmyk:"" , importance:"4" , type:"light"},
+		{name:'Watermelon', hex:"ffdee1", pantone:"", cmyk:"" , importance:"4" , type:"lightest"}, 
+
+
+		{name:'Eggplant', hex:"6f1056", pantone:"", cmyk:"" , importance:"4" , type:"dark"},
+		{name:'Eggplant', hex:"bb4f9f", pantone:"", cmyk:"" , importance:"4" , type:""},
+		{name:'Eggplant', hex:"d6a0c8", pantone:"", cmyk:"" , importance:"4" , type:"light"},
+		{name:'Eggplant', hex:"fdddf5", pantone:"", cmyk:"" , importance:"4" , type:"lightest"}, 
+
+
+		{name:'Violet', hex:"2f0062", pantone:"", cmyk:"" , importance:"4" , type:"dark"},
+		{name:'Violet', hex:"7a00fd", pantone:"", cmyk:"" , importance:"4" , type:""},
+		{name:'Violet', hex:"b578f7", pantone:"", cmyk:"" , importance:"4" , type:"light"},
+		{name:'Violet', hex:"f1e4ff", pantone:"", cmyk:"" , importance:"4" , type:"lightest"}, 
+
+
+		{name:'PBR', hex:"183c78", pantone:"", cmyk:"" , importance:"16" , type:"dark"},
+		{name:'PBR', hex:"447ad4", pantone:"", cmyk:"" , importance:"44" , type:"", size:"big"},
+		{name:'PBR', hex:"a1bce9", pantone:"", cmyk:"" , importance:"16" , type:"light"},
+		{name:'PBR', hex:"ecf2fb", pantone:"", cmyk:"" , importance:"44" , type:"lightest"},
+
+
+		{name:'Sea', hex:"005254", pantone:"", cmyk:"" , importance:"4" , type:"dark"},
+		{name:'Sea', hex:"30c1c5", pantone:"", cmyk:"" , importance:"8" , type:""},
+		{name:'Sea', hex:"90d9db", pantone:"", cmyk:"" , importance:"4" , type:"light"},
+		{name:'Sea', hex:"e4feff", pantone:"", cmyk:"" , importance:"4" , type:"light"},
+
+
+		{name:'Apple', hex:"123806", pantone:"", cmyk:"" , importance:"4" , type:"dark"},
+		{name:'Apple', hex:"16aa00", pantone:"", cmyk:"" , importance:"8" , type:""},
+		{name:'Apple', hex:"83cd78", pantone:"", cmyk:"" , importance:"4" , type:"light"},
+		{name:'Apple', hex:"e9ffe3", pantone:"", cmyk:"" , importance:"4" , type:"light"}
+		];
+
+		$scope.random = function(){
+			return 0.5 - Math.random();
+		};
+
+		$scope.addTodo = function() {
+			$scope.todos.push({text:$scope.todoText, done:false});
+			$scope.todoText = '';
+		};
+
+		$scope.remaining = function() {
+			var count = 0;
+			angular.forEach($scope.todos, function(todo) {
+				count += todo.done ? 0 : 1;
+			});
+			return count;
+		};
+
+		$scope.archive = function() {
+			var oldTodos = $scope.todos;
+			$scope.todos = [];
+			angular.forEach(oldTodos, function(todo) {
+				if (!todo.done) $scope.todos.push(todo);
+			});
+		};
+	}
+
+</script>
+
+
+<body ng-controller="BrandCtrl">
+
+	<navigation>
+
+		<h2>Brand guide</h2>
+
+		<ul>
+			<li><a href="#values">Brand Values</a></li>
+			<li><a href="#logo">Logo</a></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#typography">Typography</a></li>
+			<li><a href="#photography">Photography</a></li>
+			<li><a href="#layout">Layout</a></li>
+			<li><a href="#iconography">Iconography</a></li>
+		</ul>
+	</navigation>
+
+	<sections>
+		<section id="values">
+			<h1>Brand Values</h1>
+		</section>
+
+
+		<section id="logo">
+			<h1>Logo</h1>
+
+			<h2>Primary logo</h2>
+
+			<graphic>
+				<img src="img/logo/noom_logo_big_blue.png" height="100">
+			</graphic>
+
+
+			<h2>Logo usage</h2>
+
+			<description>There are 2 versions of the logo, <strong>big</strong> and <strong>small</strong>. It is important to use the correct file when designing with the logo. You can tell the difference between them by looking at the rows of dots. You should always be able to distinguish the dots in the logo. If you can't see the dots clearly then switch to the small logo.</description>
+
+			<example>
+
+				<graphic>
+					<img src="img/logo/noom_logo_big_blue.png" height="60">
+					<captionText>The <strong>big</strong> version of the Noom logo has 3 rows of dots.</captionText>
+				</graphic>
+
+				<graphic>
+					<BR>
+						<img src="img/logo/noom_logo_small_blue.png" height="34">
+						<captionText>The <strong>small</strong> version of the logo has only 2 rows of dots.</captionText>
+					</graphic>
+
+				</example>
+
+				<h2 id="logo-downloads">Logo downloads</h2>
+				<downloads>
+					<a class="button" href="img/logo/noom_logo_latest.zip">&#11015; Download all (.zip)</a> <a class="button" href="img/logo/noom_logo_eps.zip">&#11015;.eps</a> <a class="button" href="img/logo/noom_logo_png.zip">&#11015; .png</a> 
+				</downloads>
+
+
+			</section>
+
+
+			<section id="colors">
+				<h1>Colors</h1>
+
+				<description>The color palette consists of 10 colors, each with 4 shades. Each color has a dark, main, light and lightest version of the color. The main color should be used first and the darks and lights should be used as support of the main colors.</description>
+
+				<h2>Primary colors</h2>
+
+				<div id="chips">
+
+					<span ng-repeat="color in colors" ng-if="color.size == 'big'">
+						<div class="chip" >
+							<chip style="background:#{{color.hex}}" class="{{color.size}}"></chip>
+							<div class="info">
+								<colorName>{{color.name}}</colorName>
+								<colorType></colorType>
+								<hex>{{color.hex}}</hex>
+							</div>
+						</div>
+					</span>
+
+				</div>
+
+
+				<h2>All colors</h2>
+
+				<div id="chips">
+
+					<div class="chip" ng-repeat="color in colors">
+						<chip style="background:#{{color.hex}}"></chip>
+						<div class="info">
+							<colorName>{{color.name}}</colorName>
+							<colorType>{{color.type}}</colorType>
+							<hex>{{color.hex}}</hex>
+						</div>
+					</div>
+
+				</div>
+
+
+				<h2>Color distribution</h2>
+
+				<description id="sea_of_white">The dynamically generated circle below is an example of the ratio you should strive for when creating compositions. Notice how the colors float in a <strong>"sea of white"</strong>. This deliberate use of white to create an airy feel allows the colors to pop in fun combinations without being over-powering.</description>
+
+
+				<a id="balance" href="." title="Click to generate a new composition">
+
+					<ratio ng-repeat="color in colors | orderBy : random" style="width:{{color.importance}}%;height:{{color.importance}}%; background:#{{color.hex}};">
+					</ratio>
+
+				</a>
+
+
+
+			</section>
+
+
+			<section id="typography">
+				<h1>Typography</h1>
+
+				<h2>Main typeface</h2>
+
+				<description>Roboto is our typeface. We use it mostly in the lighter weights &mdash; <span class="light">light</span>, <span class="book">regular</span> and <span class="medium">medium</span>.</description>
+
+				<example>
+
+					<typeSample class="big light">Roboto Light</typeSample>
+					<typeSample class="big book">Roboto Regular</typeSample>
+					<typeSample class="big medium">Roboto Medium</typeSample> 
+					<typeSample class="big bold">Roboto Bold</typeSample>
+				</example>
+
+				<h2>Type sizing</h2>
+
+				<description>Try to use the right font for the right size. Notice how each headline seems to have the same thickness as the rest, even though they are different sizes.</description>
+
+				<example>
+					<typeSample class="light" style="font-size: 70px;">Light</typeSample>
+
+					<typeSample class="book" style="font-size: 40px;">Book</typeSample>
+
+					<typeSample class="medium" style="font-size: 20px;">Medium</typeSample>
+
+					<typeSample class="bold" style="font-size: 12px; padding-left: 12px;">Bold</typeSample>
+				</example>
+
+				<a class="button" href="img/spacing-font-sizes.pdf">&#11015; Download font size chart</a>
+
+				<h2>Body copy typeface</h2>
+
+				<description><strong>Roboto</strong> is used throughout the app for copy, including content articles, tutorials and FAQs.</description>
+
+				<example>
+					<typeSample class="bodyCopy">Sleep in the sink attack toss the mousie attack lick, sleep in the sink leap fluffy fur eat the grass hiss. Chuf claw climb the curtains tail flick, zzz jump on the table leap rip the couch tail flick sleep on your keyboard eat the grass.<br><br> </typeSample>
+					<captionText>Roboto Regular</captionText>
+				</example>
+
+				<h2>Type downloads</h2>
+				<downloads>
+					<a class="button" href="/assets/roboto.zip">&#11015; Download Roboto</a>
+				</downloads>
+
+				<h2>Type tone</h2>
+
+				<description>Never use all-caps. We don't shout. We speak.</description>
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/caps_1.png">
+						<captionText>Better</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/caps_1.png">
+						<captionText>Shouty</captionText>
+					</photograph>
+
+				</example>
+
+			</section>
+
+
+
+			<section id="photography">
+				<h1>Photography</h1>
+
+				<description>When it comes to photography the "how" (tone) is just as important as the "what" (subject matter). The following guide will show you how to ensure everything we say with photography sounds playful, approachable, trusted and supportive.</description>
+
+				<h2>Casual</h2>
+
+				<description>We are <strong>casual</strong> &mdash; not dramatic. We don't go our of way to make things sexier, bolder, sleeker. Our imperfections make us approachable. Ask yourself <em>"is the photographer trying to show off?"</em></description>
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/casual_1.png">
+						<captionText>Casual</captionText>
+					</photograph>
+					<photograph>
+						<img src="/img/photos/dont/dramatic_2.png">
+						<captionText>Dramatic</captionText>
+					</photograph>
+				</example>
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/casual_2.png">
+						<captionText>Casual</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/dramatic_1.png">
+						<captionText>Dramatic</captionText>
+					</photograph>
+
+
+				</example>
+
+
+
+				<h2>Genuine</h2>
+
+				<description>We speak through <strong>genuine</strong> moments. Not fake or forced. Real people are looking to us for real & trustworthy support. Ask yourself: <em>"would I see this on Instagram?"</em></description>
+
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/genuine_1.png">
+						<captionText>Genuine moment</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/staged_1.png">
+						<captionText>Fake moment</captionText>
+					</photograph>
+
+
+				</example>
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/genuine_2.png">
+						<captionText>Real friends</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/staged_2.png">
+						<captionText>Fake friends</captionText>
+					</photograph>
+
+
+
+				</example>
+
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/genuine_3.png">
+						<captionText>Real active people</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/staged_3.png">
+						<captionText>Fake active person</captionText>
+					</photograph>
+				</example>
+
+				<h2>Light-hearted</h2>
+
+				<description>We're a glass-half-full kind of company. Take the <strong>light-hearted</strong> approach &mdash; every time. Ask yourself: <em>"would this put a smile on my face?"</em></description>
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/playful_1.png">
+						<captionText>Heh!</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/serious_2.png">
+						<captionText>Why so serious?</captionText>
+					</photograph>
+
+
+				</example>
+
+
+			</section>
+
+
+			<section id="layout">
+
+				<h1>Layouts</h1>
+
+				<description>The previous sections covered specific parts of our brand. Now, by combining all those color, typographic, and photographic rules you can create visual compositions that are brand-perfect.</description>
+
+				<h2>Type always on white</h2>
+
+				<description>Most compositions will rely on both words and imagery to convey a message. Readability will of course be our top priority. Since <a href="#sea_of_white">white</a> is our buffer color use it to create a text-safe area. </description>
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/text_2.png">
+						<captionText>A white box gives ample room for the text and photo to co-exist.</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/text_2.png">
+						<captionText>Text directly over a photo can be difficult to read.</captionText>
+					</photograph>
+
+
+				</example>
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/text_3.png">
+						<captionText>Instead, if possible, create empty (white) space in the photo.</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/text_3.png">
+						<captionText>Colorizing a photo will make the text easier to read but it results in dark and gloomy compositions.</captionText>
+					</photograph>
+
+
+				</example>
+
+				<example>
+					<photograph>
+						<img src="/img/photos/do/light_4.png">
+						<captionText>Instead, place the photo in a <a href="#sea_of_white">sea of white</a>. This allows you to properly balance the look and feel by adding touches of the new Noom colors.</captionText>
+					</photograph>
+
+					<photograph>
+						<img src="/img/photos/dont/dark_4.png">
+						<captionText>Sometimes a photo is simple enough to place text directly on top without colorizing. <br><br>Unfortunately, we lose <a href="#sea_of_white">brand-color distribution</a>. This color scheme here says "Old Noom".</captionText>
+					</photograph>
+
+
+				</example>
+
+
+
+			</section>
+
+
+		</sections>
+
+	</body>
