@@ -18,6 +18,10 @@ $fontL: 20px;
 $fontXL: 22px;
 $fontXXL: 24px;
 $fontXXXL: 27px;
+$fontH: 30px;
+$fontXH: 34px;
+$fontXXH: 45px;
+$fontXXXH: 56;
 
 $base-font-size:   $fontM;
 $small-font-size:  $fontS;
@@ -82,11 +86,18 @@ $spaceL: 24px;
 $spaceXL: 32px;
 $spaceXXL: 40px;
 $spaceXXXL: 48px;
+$spaceH: 56px;
+$spaceXH: 64px;
+$spaceXXH: 72px;
+$spaceXXXH: 80px;
 
 $spacing-unit: $spaceL;
 
 $on-palm:          600px;
 $on-laptop:        960px;
+
+// timing
+$transition-time: 0.3s;
 
 
 // Using media queries with like this:

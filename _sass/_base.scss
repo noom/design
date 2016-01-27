@@ -25,6 +25,10 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+
+    strong {
+        font-weight: 500;
+    }
 }
 
 
@@ -34,9 +38,9 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure, section,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -60,6 +64,7 @@ figure > img {
 
 figcaption {
     font-size: $small-font-size;
+    text-transform: uppercase;
 }
 
 
@@ -84,7 +89,21 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: $fontXH;
+}
+
+h2 {
+    font-size: $fontXXXL;
+    margin-top: $spaceXXXL;
+}
+
+h3 {
+    font-size: $fontL;
+    margin-top: $spaceXL;
 }
 
 
@@ -95,14 +114,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    transition: all $transition-time;
 
     &:visited {
-        color: $brand-color-dark;
+        color: $brand-color;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $brand-color-dark;
+        transition: all $transition-time;
     }
 }
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Brand Guide"
+permalink: /brand/
 ---
 
 
@@ -102,8 +103,10 @@ title: "Brand Guide"
 
 	<navigation>
 
-		<h2>Brand guide</h2>
-
+		<section>
+			<h1>Brand Guide</h1>
+			<description>This guide outlines the values, assets and usage of the Noom brand. These guidelines should be followed in all media in which the Noom brand is present.</description>
+		</section>
 		<ul>
 			<li><a href="#values">Brand Values</a></li>
 			<li><a href="#logo">Logo</a></li>
@@ -117,42 +120,45 @@ title: "Brand Guide"
 
 	<sections>
 		<section id="values">
-			<h1>Brand Values</h1>
+			<h2>Brand Values</h2>
+			<description>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quos quas, sed odio, soluta magni debitis blanditiis iusto vel enim, assumenda nostrum, ducimus aut quae laborum ratione possimus dolore unde.
+			</description>
 		</section>
 
 
 		<section id="logo">
-			<h1>Logo</h1>
+			<h2>Logo</h2>
 
-			<h2>Primary logo</h2>
+			<h3>Primary logo</h3>
 
 			<graphic>
-				<img src="img/logo/noom_logo_big_blue.png" height="100">
+				<img src="/img/logo//noom_logo_big_blue.png" height="100">
 			</graphic>
 
 
-			<h2>Logo usage</h2>
+			<h3>Logo usage</h3>
 
 			<description>There are 2 versions of the logo, <strong>big</strong> and <strong>small</strong>. It is important to use the correct file when designing with the logo. You can tell the difference between them by looking at the rows of dots. You should always be able to distinguish the dots in the logo. If you can't see the dots clearly then switch to the small logo.</description>
 
 			<example>
 
 				<graphic>
-					<img src="img/logo/noom_logo_big_blue.png" height="60">
+					<img src="/img/logo//noom_logo_big_blue.png" height="60">
 					<captionText>The <strong>big</strong> version of the Noom logo has 3 rows of dots.</captionText>
 				</graphic>
 
 				<graphic>
 					<BR>
-						<img src="img/logo/noom_logo_small_blue.png" height="34">
+						<img src="/img/logo//noom_logo_small_blue.png" height="34">
 						<captionText>The <strong>small</strong> version of the logo has only 2 rows of dots.</captionText>
 					</graphic>
 
 				</example>
 
-				<h2 id="logo-downloads">Logo downloads</h2>
+				<h3 id="logo-downloads">Logo downloads</h3>
 				<downloads>
-					<a class="button" href="img/logo/noom_logo_latest.zip">&#11015; Download all (.zip)</a> <a class="button" href="img/logo/noom_logo_eps.zip">&#11015;.eps</a> <a class="button" href="img/logo/noom_logo_png.zip">&#11015; .png</a> 
+					<a class="button" href="/img/logo//noom_logo_latest.zip">&#11015; Download all (.zip)</a> <a class="button" href="/img/logo//noom_logo_eps.zip">&#11015;.eps</a> <a class="button" href="/img/logo//noom_logo_png.zip">&#11015; .png</a> 
 				</downloads>
 
 
@@ -160,50 +166,33 @@ title: "Brand Guide"
 
 
 			<section id="colors">
-				<h1>Colors</h1>
+				<h2>Colors</h2>
 
 				<description>The color palette consists of 10 colors, each with 4 shades. Each color has a dark, main, light and lightest version of the color. The main color should be used first and the darks and lights should be used as support of the main colors.</description>
 
-				<h2>Primary colors</h2>
+				<h3>Primary colors</h3>
 
-				<div id="chips">
-
-					<span ng-repeat="color in colors" ng-if="color.size == 'big'">
-						<div class="chip" >
-							<chip style="background:#{{color.hex}}" class="{{color.size}}"></chip>
-							<div class="info">
-								<colorName>{{color.name}}</colorName>
-								<colorType></colorType>
-								<hex>{{color.hex}}</hex>
-							</div>
-						</div>
-					</span>
-
+				<div class="chips">
+					<span class="color-swatch primary" style="background-color: #447ad4"></span>
 				</div>
 
 
-				<h2>All colors</h2>
+				<h3>All colors</h3>
 
-				<div id="chips">
-
-					<div class="chip" ng-repeat="color in colors">
-						<chip style="background:#{{color.hex}}"></chip>
-						<div class="info">
-							<colorName>{{color.name}}</colorName>
-							<colorType>{{color.type}}</colorType>
-							<hex>{{color.hex}}</hex>
-						</div>
-					</div>
+				<div class="chips">
 
 				</div>
+
+				<h3>Color Chart</h3>
+				<a class="button" href="/img/color_chart_with_hex.pdf">&#11015; Download color chart</a>
 
 			</section>
 
 
 			<section id="typography">
-				<h1>Typography</h1>
+				<h2>Typography</h2>
 
-				<h2>Main typeface</h2>
+				<h3>Main typeface</h3>
 
 				<description>Roboto is our typeface. We use it mostly in the lighter weights &mdash; <span class="light">light</span>, <span class="book">regular</span> and <span class="medium">medium</span>.</description>
 
@@ -215,7 +204,7 @@ title: "Brand Guide"
 					<typeSample class="big bold">Roboto Bold</typeSample>
 				</example>
 
-				<h2>Type sizing</h2>
+				<h3>Type sizing</h3>
 
 				<description>Try to use the right font for the right size. Notice how each headline seems to have the same thickness as the rest, even though they are different sizes.</description>
 
@@ -229,9 +218,9 @@ title: "Brand Guide"
 					<typeSample class="bold" style="font-size: 12px; padding-left: 12px;">Bold</typeSample>
 				</example>
 
-				<a class="button" href="img/spacing-font-sizes.pdf">&#11015; Download font size chart</a>
+				<a class="button" href="/img/spacing_font_sizes.pdf">&#11015; Download font size chart</a>
 
-				<h2>Body copy typeface</h2>
+				<h3>Body copy typeface</h3>
 
 				<description><strong>Roboto</strong> is used throughout the app for copy, including content articles, tutorials and FAQs.</description>
 
@@ -240,12 +229,27 @@ title: "Brand Guide"
 					<captionText>Roboto Regular</captionText>
 				</example>
 
-				<h2>Type downloads</h2>
+				<h3>Type sample</h3>
+
+
+				<description>The sections above display the font styles that are available. Here, we outline the type styles that are employed throughout the app. The uses of the different type styles should remain consistent across the app and cross platform.</description>
+
+				<example>
+					<typeSample>Headings</typeSample>
+					<typeSample>Task Card</typeSample>
+					<typeSample>Body</typeSample>
+					<typeSample>Informational</typeSample>
+					<typeSample>Clickable List</typeSample>
+					<typeSample>Clickable Text</typeSample>
+					<typeSample>Button</typeSample>
+				</example>
+
+				<h3>Type downloads</h3>
 				<downloads>
 					<a class="button" href="/assets/roboto.zip">&#11015; Download Roboto</a>
 				</downloads>
 
-				<h2>Type tone</h2>
+				<h3>Type tone</h3>
 
 				<description>Never use all-caps. We don't shout. We speak.</description>
 
@@ -267,11 +271,11 @@ title: "Brand Guide"
 
 
 			<section id="photography">
-				<h1>Photography</h1>
+				<h2>Photography</h2>
 
 				<description>When it comes to photography the "how" (tone) is just as important as the "what" (subject matter). The following guide will show you how to ensure everything we say with photography sounds playful, approachable, trusted and supportive.</description>
 
-				<h2>Casual</h2>
+				<h3>Casual</h3>
 
 				<description>We are <strong>casual</strong> &mdash; not dramatic. We don't go our of way to make things sexier, bolder, sleeker. Our imperfections make us approachable. Ask yourself <em>"is the photographer trying to show off?"</em></description>
 
@@ -302,9 +306,9 @@ title: "Brand Guide"
 
 
 
-				<h2>Genuine</h2>
+				<h3>Genuine</h3>
 
-				<description>We speak through <strong>genuine</strong> moments. Not fake or forced. Real people are looking to us for real & trustworthy support. Ask yourself: <em>"would I see this on Instagram?"</em></description>
+				<description>We speak through <strong>genuine</strong> moments. Not fake or forced. Real people are looking to us for real &amp; trustworthy support. Ask yourself: <em>"would I see this on Instagram?"</em></description>
 
 
 				<example>
@@ -317,8 +321,6 @@ title: "Brand Guide"
 						<img src="/img/photos/dont/staged_1.png">
 						<captionText>Fake moment</captionText>
 					</photograph>
-
-
 				</example>
 
 				<example>
@@ -331,9 +333,6 @@ title: "Brand Guide"
 						<img src="/img/photos/dont/staged_2.png">
 						<captionText>Fake friends</captionText>
 					</photograph>
-
-
-
 				</example>
 
 
@@ -349,7 +348,7 @@ title: "Brand Guide"
 					</photograph>
 				</example>
 
-				<h2>Light-hearted</h2>
+				<h3>Light-hearted</h3>
 
 				<description>We're a glass-half-full kind of company. Take the <strong>light-hearted</strong> approach &mdash; every time. Ask yourself: <em>"would this put a smile on my face?"</em></description>
 
@@ -373,11 +372,11 @@ title: "Brand Guide"
 
 			<section id="layout">
 
-				<h1>Layouts</h1>
+				<h2>Layouts</h2>
 
 				<description>The previous sections covered specific parts of our brand. Now, by combining all those color, typographic, and photographic rules you can create visual compositions that are brand-perfect.</description>
 
-				<h2>Type always on white</h2>
+				<h3>Type always on white</h3>
 
 				<description>Most compositions will rely on both words and imagery to convey a message. Readability will of course be our top priority. Since <a href="#sea_of_white">white</a> is our buffer color use it to create a text-safe area. </description>
 
@@ -412,12 +411,12 @@ title: "Brand Guide"
 				<example>
 					<photograph>
 						<img src="/img/photos/do/light_4.png">
-						<captionText>Instead, place the photo in a <a href="#sea_of_white">sea of white</a>. This allows you to properly balance the look and feel by adding touches of the new Noom colors.</captionText>
+						<captionText>Instead, place the photo in a sea of white. This allows you to properly balance the look and feel by adding touches of the new Noom colors.</captionText>
 					</photograph>
 
 					<photograph>
 						<img src="/img/photos/dont/dark_4.png">
-						<captionText>Sometimes a photo is simple enough to place text directly on top without colorizing. <br><br>Unfortunately, we lose <a href="#sea_of_white">brand-color distribution</a>. This color scheme here says "Old Noom".</captionText>
+						<captionText>Sometimes a photo is simple enough to place text directly on top without colorizing. <br><br>Unfortunately, we lose brand-color distribution. This color scheme here says "Old Noom".</captionText>
 					</photograph>
 
 
