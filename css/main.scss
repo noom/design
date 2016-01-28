@@ -36,10 +36,11 @@ $cherry_dark: #9c0300;
 $watermelon_dark: #b12c37;
 $sun_dark: #c28800;
 $orange_dark: #c36000;
-$eggplant: #bb4f9f;
 $violet: #7a00fd;
+$eggplant: #bb4f9f;
+$apple: #16aa00;
 $sea: #30c1c5;
-$chery: #e73b37;
+$cherry: #e73b37;
 $watermelon: #f75462;
 $sun: #ffcf04;
 $orange: #ff8a1a;
@@ -51,8 +52,8 @@ $sea_light: #90d9db;
 $watermelon_light: #fba9b0;
 $sun_light: #ffe782;
 $orange_light: #f8bd85;
-$eggplant_lightest: #fdddf5;
 $violet_lightest: #f1e4ff;
+$eggplant_lightest: #fdddf5;
 $apple_lightest: #e9ffe3;
 $sea_lightest: #e4feff;
 $watermelon_lightest: #ffdee1;
@@ -67,7 +68,9 @@ $pbr_lightest: #ecf2fb;
 $pbr_light: #a1bce9;
 $grey_lightest: #f2f2f2;
 $grey_dark: #4d4d4d;
-$apple: #16aa00;
+
+$color_names: violet_dark eggplant_dark apple_dark sea_dark cherry_dark watermelon_dark sun_dark orange_dark eggplant violet apple sea cherry watermelon sun orange violet_light eggplant_light apple_light sea_light cherry_light watermelon_light sun_light orange_light violet_lightest eggplant_lightest apple_lightest sea_lightest cherry_lightest watermelon_lightest sun_lightest orange_lightest pbr_dark pbr pbr_light pbr_lightest grey_dark grey grey_light grey_lightest;
+$color_vars: $violet_dark $eggplant_dark $apple_dark $sea_dark $cherry_dark $watermelon_dark $sun_dark $orange_dark $eggplant $violet $apple $sea $cherry $watermelon $sun $orange $violet_light $eggplant_light $apple_light $sea_light $cherry_light $watermelon_light $sun_light $orange_light $violet_lightest $eggplant_lightest $apple_lightest $sea_lightest $cherry_lightest $watermelon_lightest $sun_lightest $orange_lightest $pbr_dark $pbr $pbr_light $pbr_lightest $grey_dark $grey $grey_light $grey_lightest;
 
 $text-color:       $grey_dark;
 $background-color: #ffffff;
@@ -96,9 +99,41 @@ $spacing-unit: $spaceL;
 $on-palm:          600px;
 $on-laptop:        960px;
 
+// border radius
+$button-border-radius: 4px;
+
 // timing
 $transition-time: 0.3s;
 
+//functions
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  
+  @return $string;
+}
+
+@function to-string($value) {
+  @return inspect($value);
+}
+
+// clearfix
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 
 // Using media queries with like this:
 // @include media-query($palm) {

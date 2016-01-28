@@ -233,3 +233,49 @@
         }
     }
 }
+
+section {
+    .section-container {
+        @extend %clearfix;
+        description, example {
+            padding: $spaceL 0;
+
+            @include media-query($on-palm) {
+                width: 100% !important;
+                float: none !important;
+            }
+        }
+
+        description {
+            width: 40%;
+            float: left;
+            padding-right: $spaceXL;
+            clear: both;
+        }
+
+        example {
+            width: 60%;
+            float: right;
+            padding: $spaceXL;
+            border: 1px solid $grey_lightest;
+            margin: $spaceL 0;
+            @extend %clearfix;
+
+            typeSample:last-child {
+                margin-bottom: 0;
+            }
+
+
+            photograph {
+                float: left;
+                max-width: 50%;
+            }
+        }
+
+        typeSample {
+            display: block;
+        }
+    }
+}
+
+

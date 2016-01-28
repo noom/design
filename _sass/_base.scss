@@ -38,7 +38,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure, section,
+ul, ol, dl, figure, section, typeSample,
 %vertical-rhythm {
     margin-bottom: $spacing-unit;
 }
@@ -104,6 +104,29 @@ h2 {
 h3 {
     font-size: $fontL;
     margin-top: $spaceXL;
+}
+
+h4 {
+    font-size: $fontS;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 

@@ -101,17 +101,20 @@ permalink: /brand/
 
 <body ng-controller="BrandCtrl">
 
-	<navigation>
-
 		<section>
 			<h1>Brand Guide</h1>
 			<description>This guide outlines the values, assets and usage of the Noom brand. These guidelines should be followed in all media in which the Noom brand is present.</description>
 		</section>
+	<navigation>
+
+		<h4>Jump to</h4>
+
 		<ul>
 			<li><a href="#values">Brand Values</a></li>
 			<li><a href="#logo">Logo</a></li>
 			<li><a href="#colors">Colors</a></li>
 			<li><a href="#typography">Typography</a></li>
+			<li><a href="#voice">Voice and Copy</a></li>
 			<li><a href="#photography">Photography</a></li>
 			<li><a href="#layout">Layout</a></li>
 			<li><a href="#iconography">Iconography</a></li>
@@ -131,37 +134,35 @@ permalink: /brand/
 			<h2>Logo</h2>
 
 			<h3>Primary logo</h3>
-
-			<graphic>
-				<img src="/img/logo//noom_logo_big_blue.png" height="100">
-			</graphic>
+			<div class="section-container">
+				<description>What does the logo stand for?</description>
+				<example class="clearfix">
+					<img src="/img/logo//noom_logo_big_blue.png" class="logo">
+				</example>
+			</div>
 
 
 			<h3>Logo usage</h3>
 
-			<description>There are 2 versions of the logo, <strong>big</strong> and <strong>small</strong>. It is important to use the correct file when designing with the logo. You can tell the difference between them by looking at the rows of dots. You should always be able to distinguish the dots in the logo. If you can't see the dots clearly then switch to the small logo.</description>
+			<div class="section-container">
+				<description>There are 2 versions of the logo, <strong>big</strong> and <strong>small</strong>. It is important to use the correct file when designing with the logo. You can tell the difference between them by looking at the rows of dots. You should always be able to distinguish the dots in the logo. If you can't see the dots clearly then switch to the small logo.</description>
 
-			<example>
-
-				<graphic>
-					<img src="/img/logo//noom_logo_big_blue.png" height="60">
-					<captionText>The <strong>big</strong> version of the Noom logo has 3 rows of dots.</captionText>
-				</graphic>
-
-				<graphic>
-					<BR>
-						<img src="/img/logo//noom_logo_small_blue.png" height="34">
-						<captionText>The <strong>small</strong> version of the logo has only 2 rows of dots.</captionText>
-					</graphic>
-
+				<example class="clearfix">
+						<img src="/img/logo//noom_logo_big_blue.png" class="logo">
+						<captionText>The <strong>big</strong> version of the Noom logo has 3 rows of dots.</captionText>
 				</example>
+
+				<example class="clearfix">
+						<img src="/img/logo//noom_logo_small_blue.png" class="logo">
+						<br>
+						<captionText>The <strong>small</strong> version of the logo has only 2 rows of dots.</captionText>
+				</example>
+			</div>
 
 				<h3 id="logo-downloads">Logo downloads</h3>
 				<downloads>
 					<a class="button" href="/img/logo//noom_logo_latest.zip">&#11015; Download all (.zip)</a> <a class="button" href="/img/logo//noom_logo_eps.zip">&#11015;.eps</a> <a class="button" href="/img/logo//noom_logo_png.zip">&#11015; .png</a> 
 				</downloads>
-
-
 			</section>
 
 
@@ -172,15 +173,54 @@ permalink: /brand/
 
 				<h3>Primary colors</h3>
 
-				<div class="chips">
-					<span class="color-swatch primary" style="background-color: #447ad4"></span>
-				</div>
+					<div class="color-container">
+						<div class="color-swatch primary pbr"></div>
+					</div>
 
 
 				<h3>All colors</h3>
 
-				<div class="chips">
-
+				<div class="color-container">
+					<div class="color-swatch grey_dark"></div>
+					<div class="color-swatch grey"></div>
+					<div class="color-swatch grey_light"></div>
+					<div class="color-swatch grey_lightest"></div>
+					<div class="color-swatch sun_dark"></div>
+					<div class="color-swatch sun"></div>
+					<div class="color-swatch sun_light"></div>
+					<div class="color-swatch sun_lightest"></div>
+					<div class="color-swatch orange_dark"></div>
+					<div class="color-swatch orange"></div>
+					<div class="color-swatch orange_light"></div>
+					<div class="color-swatch orange_lightest"></div>
+					<div class="color-swatch cherry_dark"></div>
+					<div class="color-swatch cherry"></div>
+					<div class="color-swatch cherry_light"></div>
+					<div class="color-swatch cherry_lightest"></div>
+					<div class="color-swatch watermelon_dark"></div>
+					<div class="color-swatch watermelon"></div>
+					<div class="color-swatch watermelon_light"></div>
+					<div class="color-swatch watermelon_lightest"></div>
+					<div class="color-swatch eggplant_dark"></div>
+					<div class="color-swatch eggplant"></div>
+					<div class="color-swatch eggplant_light"></div>
+					<div class="color-swatch eggplant_lightest"></div>
+					<div class="color-swatch violet_dark"></div>
+					<div class="color-swatch violet"></div>
+					<div class="color-swatch violet_light"></div>
+					<div class="color-swatch violet_lightest"></div>
+					<div class="color-swatch pbr_dark"></div>
+					<div class="color-swatch pbr"></div>
+					<div class="color-swatch pbr_light"></div>
+					<div class="color-swatch pbr_lightest"></div>
+					<div class="color-swatch sea_dark"></div>
+					<div class="color-swatch sea"></div>
+					<div class="color-swatch sea_light"></div>
+					<div class="color-swatch sea_lightest"></div>
+					<div class="color-swatch apple_dark"></div>
+					<div class="color-swatch apple"></div>
+					<div class="color-swatch apple_light"></div>
+					<div class="color-swatch apple_lightest"></div>
 				</div>
 
 				<h3>Color Chart</h3>
@@ -194,55 +234,62 @@ permalink: /brand/
 
 				<h3>Main typeface</h3>
 
-				<description>Roboto is our typeface. We use it mostly in the lighter weights &mdash; <span class="light">light</span>, <span class="book">regular</span> and <span class="medium">medium</span>.</description>
+				<div class="section-container">
+					<description>Roboto is our typeface. We use it mostly in the lighter weights &mdash; <span class="light">light</span>, <span class="regular">regular</span> and <span class="medium">medium</span>.</description>
 
-				<example>
-
-					<typeSample class="big light">Roboto Light</typeSample>
-					<typeSample class="big book">Roboto Regular</typeSample>
-					<typeSample class="big medium">Roboto Medium</typeSample> 
-					<typeSample class="big bold">Roboto Bold</typeSample>
-				</example>
+					<example class="clearfix">
+						<typeSample class="big light">Roboto Light</typeSample>
+						<typeSample class="big regular">Roboto Regular</typeSample>
+						<typeSample class="big medium">Roboto Medium</typeSample> 
+						<typeSample class="big bold">Roboto Bold</typeSample>
+					</example>
+				</div>
 
 				<h3>Type sizing</h3>
 
-				<description>Try to use the right font for the right size. Notice how each headline seems to have the same thickness as the rest, even though they are different sizes.</description>
+				<div class="section-container">				
+					<description>Try to use the right font for the right size. Notice how each headline seems to have the same thickness as the rest, even though they are different sizes.</description>
 
-				<example>
-					<typeSample class="light" style="font-size: 70px;">Light</typeSample>
+					<example class="clearfix">
+						<typeSample class="light" style="font-size: 70px;">Light</typeSample>
 
-					<typeSample class="book" style="font-size: 40px;">Book</typeSample>
+						<typeSample class="regular" style="font-size: 40px;">Regular</typeSample>
 
-					<typeSample class="medium" style="font-size: 20px;">Medium</typeSample>
+						<typeSample class="medium" style="font-size: 20px;">Medium</typeSample>
 
-					<typeSample class="bold" style="font-size: 12px; padding-left: 12px;">Bold</typeSample>
-				</example>
+						<typeSample class="bold" style="font-size: 12px;">Bold</typeSample>
+					</example>
+				</div>
 
 				<a class="button" href="/img/spacing_font_sizes.pdf">&#11015; Download font size chart</a>
 
 				<h3>Body copy typeface</h3>
 
-				<description><strong>Roboto</strong> is used throughout the app for copy, including content articles, tutorials and FAQs.</description>
+				<div class="section-container">
+					<description><strong>Roboto</strong> is used throughout the app for copy, including content articles, tutorials and FAQs.</description>
 
-				<example>
-					<typeSample class="bodyCopy">Sleep in the sink attack toss the mousie attack lick, sleep in the sink leap fluffy fur eat the grass hiss. Chuf claw climb the curtains tail flick, zzz jump on the table leap rip the couch tail flick sleep on your keyboard eat the grass.<br><br> </typeSample>
-					<captionText>Roboto Regular</captionText>
-				</example>
+					<example class="clearfix">
+						<typeSample class="body-text">Sleep in the sink attack toss the mousie attack lick, sleep in the sink leap fluffy fur eat the grass hiss. Chuf claw climb the curtains tail flick, zzz jump on the table leap rip the couch tail flick sleep on your keyboard eat the grass.<br><br> </typeSample>
+						<captionText>Roboto Regular</captionText>
+					</example>
+				</div>
 
 				<h3>Type sample</h3>
 
 
-				<description>The sections above display the font styles that are available. Here, we outline the type styles that are employed throughout the app. The uses of the different type styles should remain consistent across the app and cross platform.</description>
-
-				<example>
-					<typeSample>Headings</typeSample>
-					<typeSample>Task Card</typeSample>
-					<typeSample>Body</typeSample>
-					<typeSample>Informational</typeSample>
-					<typeSample>Clickable List</typeSample>
-					<typeSample>Clickable Text</typeSample>
-					<typeSample>Button</typeSample>
-				</example>
+				<div class="section-container">
+					<description>The sections above display the font styles that are available. Here, we outline the type styles that are employed throughout the app. The uses of the different type styles should remain consistent across the app and cross platform.</description>
+				
+					<example class="clearfix">
+						<typeSample class="headings">Headings</typeSample>
+						<typeSample class="task-card">Task Card</typeSample>
+						<typeSample class="body-text">Body</typeSample>
+						<typeSample class="informational">Informational</typeSample>
+						<typeSample class="clickable-list">Clickable List</typeSample>
+						<typeSample class="clickable-text">Clickable Text</typeSample>
+						<typeSample class="button-text">Button</typeSample>
+					</example>
+				</div>
 
 				<h3>Type downloads</h3>
 				<downloads>
@@ -251,21 +298,31 @@ permalink: /brand/
 
 				<h3>Type tone</h3>
 
-				<description>Never use all-caps. We don't shout. We speak.</description>
+				<div class="section-container">
+					<description>Never use all-caps. We don't shout. We speak.</description>
+				
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/caps_1.png">
+							<captionText>Better</captionText>
+						</photograph>
+	
+						<photograph>
+							<img src="/img/photos/dont/caps_1.png">
+							<captionText>Shouty</captionText>
+						</photograph>
+					</example>
+				</div>
 
-				<example>
-					<photograph>
-						<img src="/img/photos/do/caps_1.png">
-						<captionText>Better</captionText>
-					</photograph>
+			</section>
 
-					<photograph>
-						<img src="/img/photos/dont/caps_1.png">
-						<captionText>Shouty</captionText>
-					</photograph>
+			<section id="voice">
+				<h2>Voice &amp; Copy</h2>
 
-				</example>
-
+				<div class="section-container">
+					<description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptate odit, quo fuga voluptas quisquam illum tenetur corrupti quae, tempore nemo cum amet fugit. Debitis optio voluptatibus rem sint delectus!</description>
+					<example class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem unde ratione odit impedit atque necessitatibus aliquam, facere voluptas dicta maxime harum ducimus nesciunt? Sit optio dolore, quisquam alias, unde libero?</example>
+				</div>
 			</section>
 
 
@@ -277,94 +334,95 @@ permalink: /brand/
 
 				<h3>Casual</h3>
 
-				<description>We are <strong>casual</strong> &mdash; not dramatic. We don't go our of way to make things sexier, bolder, sleeker. Our imperfections make us approachable. Ask yourself <em>"is the photographer trying to show off?"</em></description>
+				<div class="section-container">
+					<description>We are <strong>casual</strong> &mdash; not dramatic. We don't go our of way to make things sexier, bolder, sleeker. Our imperfections make us approachable. Ask yourself <em>"is the photographer trying to show off?"</em></description>
+				
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/casual_1.png">
+							<captionText>Casual</captionText>
+						</photograph>
+						<photograph>
+							<img src="/img/photos/dont/dramatic_2.png">
+							<captionText>Dramatic</captionText>
+						</photograph>
+					</example>
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/casual_2.png">
+							<captionText>Casual</captionText>
+						</photograph>
 
-				<example>
-					<photograph>
-						<img src="/img/photos/do/casual_1.png">
-						<captionText>Casual</captionText>
-					</photograph>
-					<photograph>
-						<img src="/img/photos/dont/dramatic_2.png">
-						<captionText>Dramatic</captionText>
-					</photograph>
-				</example>
+						<photograph>
+							<img src="/img/photos/dont/dramatic_1.png">
+							<captionText>Dramatic</captionText>
+						</photograph>
+					</example>
+				</div>
 
-				<example>
-					<photograph>
-						<img src="/img/photos/do/casual_2.png">
-						<captionText>Casual</captionText>
-					</photograph>
-
-					<photograph>
-						<img src="/img/photos/dont/dramatic_1.png">
-						<captionText>Dramatic</captionText>
-					</photograph>
-
-
-				</example>
 
 
 
 				<h3>Genuine</h3>
 
-				<description>We speak through <strong>genuine</strong> moments. Not fake or forced. Real people are looking to us for real &amp; trustworthy support. Ask yourself: <em>"would I see this on Instagram?"</em></description>
+				<div class="section-container">				
+					<description>We speak through <strong>genuine</strong> moments. Not fake or forced. Real people are looking to us for real &amp; trustworthy support. Ask yourself: <em>"would I see this on Instagram?"</em></description>
+
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/genuine_1.png">
+							<captionText>Genuine moment</captionText>
+						</photograph>
+
+						<photograph>
+							<img src="/img/photos/dont/staged_1.png">
+							<captionText>Fake moment</captionText>
+						</photograph>
+					</example>
+
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/genuine_2.png">
+							<captionText>Real friends</captionText>
+						</photograph>
+
+						<photograph>
+							<img src="/img/photos/dont/staged_2.png">
+							<captionText>Fake friends</captionText>
+						</photograph>
+					</example>
 
 
-				<example>
-					<photograph>
-						<img src="/img/photos/do/genuine_1.png">
-						<captionText>Genuine moment</captionText>
-					</photograph>
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/genuine_3.png">
+							<captionText>Real active people</captionText>
+						</photograph>
 
-					<photograph>
-						<img src="/img/photos/dont/staged_1.png">
-						<captionText>Fake moment</captionText>
-					</photograph>
-				</example>
-
-				<example>
-					<photograph>
-						<img src="/img/photos/do/genuine_2.png">
-						<captionText>Real friends</captionText>
-					</photograph>
-
-					<photograph>
-						<img src="/img/photos/dont/staged_2.png">
-						<captionText>Fake friends</captionText>
-					</photograph>
-				</example>
-
-
-				<example>
-					<photograph>
-						<img src="/img/photos/do/genuine_3.png">
-						<captionText>Real active people</captionText>
-					</photograph>
-
-					<photograph>
-						<img src="/img/photos/dont/staged_3.png">
-						<captionText>Fake active person</captionText>
-					</photograph>
-				</example>
+						<photograph>
+							<img src="/img/photos/dont/staged_3.png">
+							<captionText>Fake active person</captionText>
+						</photograph>
+					</example>
+				</div>
 
 				<h3>Light-hearted</h3>
 
-				<description>We're a glass-half-full kind of company. Take the <strong>light-hearted</strong> approach &mdash; every time. Ask yourself: <em>"would this put a smile on my face?"</em></description>
+				<div class="section-container">
+					<description>We're a glass-half-full kind of company. Take the <strong>light-hearted</strong> approach &mdash; every time. Ask yourself: <em>"would this put a smile on my face?"</em></description>
 
-				<example>
-					<photograph>
-						<img src="/img/photos/do/playful_1.png">
-						<captionText>Heh!</captionText>
-					</photograph>
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/playful_1.png">
+							<captionText>Heh!</captionText>
+						</photograph>
 
-					<photograph>
-						<img src="/img/photos/dont/serious_2.png">
-						<captionText>Why so serious?</captionText>
-					</photograph>
-
-
-				</example>
+						<photograph>
+							<img src="/img/photos/dont/serious_1.png">
+							<captionText>Why so serious?</captionText>
+						</photograph>
+					</example>
+				</div>
 
 
 			</section>
@@ -378,55 +436,45 @@ permalink: /brand/
 
 				<h3>Type always on white</h3>
 
-				<description>Most compositions will rely on both words and imagery to convey a message. Readability will of course be our top priority. Since <a href="#sea_of_white">white</a> is our buffer color use it to create a text-safe area. </description>
-
-				<example>
-					<photograph>
-						<img src="/img/photos/do/text_2.png">
-						<captionText>A white box gives ample room for the text and photo to co-exist.</captionText>
-					</photograph>
-
-					<photograph>
-						<img src="/img/photos/dont/text_2.png">
-						<captionText>Text directly over a photo can be difficult to read.</captionText>
-					</photograph>
-
-
-				</example>
-
-				<example>
-					<photograph>
-						<img src="/img/photos/do/text_3.png">
-						<captionText>Instead, if possible, create empty (white) space in the photo.</captionText>
-					</photograph>
-
-					<photograph>
-						<img src="/img/photos/dont/text_3.png">
-						<captionText>Colorizing a photo will make the text easier to read but it results in dark and gloomy compositions.</captionText>
-					</photograph>
-
-
-				</example>
-
-				<example>
-					<photograph>
-						<img src="/img/photos/do/light_4.png">
-						<captionText>Instead, place the photo in a sea of white. This allows you to properly balance the look and feel by adding touches of the new Noom colors.</captionText>
-					</photograph>
-
-					<photograph>
-						<img src="/img/photos/dont/dark_4.png">
-						<captionText>Sometimes a photo is simple enough to place text directly on top without colorizing. <br><br>Unfortunately, we lose brand-color distribution. This color scheme here says "Old Noom".</captionText>
-					</photograph>
-
-
-				</example>
-
-
-
+				<div class="section-container">
+					<description>Most compositions will rely on both words and imagery to convey a message. Readability will of course be our top priority. Since <a href="#sea_of_white">white</a> is our buffer color use it to create a text-safe area. </description>
+				
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/text_2.png">
+							<captionText>A white box gives ample room for the text and photo to co-exist.</captionText>
+						</photograph>
+	
+						<photograph>
+							<img src="/img/photos/dont/text_2.png">
+							<captionText>Text directly over a photo can be difficult to read.</captionText>
+						</photograph>
+					</example>
+	
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/text_3.png">
+							<captionText>Instead, if possible, create empty (white) space in the photo.</captionText>
+						</photograph>
+	
+						<photograph>
+							<img src="/img/photos/dont/text_3.png">
+							<captionText>Colorizing a photo will make the text easier to read but it results in dark and gloomy compositions.</captionText>
+						</photograph>
+					</example>
+	
+					<example class="clearfix">
+						<photograph>
+							<img src="/img/photos/do/light_4.png">
+							<captionText>Instead, place the photo in a sea of white. This allows you to properly balance the look and feel by adding touches of the new Noom colors.</captionText>
+						</photograph>
+	
+						<photograph>
+							<img src="/img/photos/dont/dark_4.png">
+							<captionText>Sometimes a photo is simple enough to place text directly on top without colorizing. <br><br>Unfortunately, we lose brand-color distribution. This color scheme here says "Old Noom".</captionText>
+						</photograph>
+					</example>
+				</div>
 			</section>
-
-
 		</sections>
-
 	</body>
