@@ -9,7 +9,8 @@ section {
   }
 
   typeSample.task-card {
-
+    font-size: $fontL;
+    font-weight: 400;
   }
 
   typeSample.body-text {
@@ -43,12 +44,15 @@ section {
   }
 
   typeSample.button-text {
-    display: inline;
+    display: inline-block;
     font-size: $fontM;
     color: white;
+    text-align: center;
     background-color: $brand-color;
     border-radius: $button-border-radius;
-    padding: 13.5px 136px;
+    padding: 13.5px 0;
+    width: 327px;
+    max-width: 100%;
     transition: all $transition-time;
 
     &:hover {

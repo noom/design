@@ -264,8 +264,9 @@ section {
             width: 60%;
             float: right;
             padding: $spaceXL;
-            border: 1px solid $grey_lightest;
             margin: $spaceL 0;
+            box-shadow: 0px 1px 3px $grey;
+            border-radius: 2px;
             @extend %clearfix;
 
             typeSample:last-child {
@@ -281,6 +282,61 @@ section {
 
         typeSample {
             display: block;
+        }
+    }
+
+    .cards-list {
+        .project-card {
+            $card-width: calc(50% - 5px);
+            display: inline-block;
+            width: $card-width;
+            box-shadow: 0px 1px 3px $grey;
+            // padding: $spaceXXL;
+            margin: $spaceXS;
+            border-radius: 2px;
+            overflow: hidden;
+
+            &:hover {
+                box-shadow: 0px 1px 4px $grey-dark;
+            }
+
+            @include media-query($on-palm) {
+                width: 100%;
+            }
+
+            .card-header-img {
+                height: 200px;
+                width: 100%;
+                background-color: $pbr;
+            }
+
+
+            .card-title {
+                color: $grey_dark;
+                width: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                padding: 0 $spaceXXL;
+            }
+
+            .card-content {
+                display: block;
+                height: $spaceH;
+                color: $grey_dark;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                padding: 0 $spaceXXL;
+                margin-bottom: $spaceXXL;   
+            }
+        }
+
+        .project-card:nth-child(2n+1) {
+            margin-left: 0;
+        }
+
+        .project-card:nth-child(2n+2) {
+            margin-right: 0;
         }
     }
 }
