@@ -1,14 +1,23 @@
 ---
 layout: default
-title: Noom Design Resources
+title: Home
 permalink: /
+displayInNav: false
 ---
 
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
+  <!-- <div class="trigger"> -->
+    {% for page in site.pages %}
+      {% if page.title and page.displayInNav %}
+      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  <!-- </div> -->
+
+<!--   <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -18,8 +27,6 @@ permalink: /
         </h2>
       </li>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </ul> -->
 
 </div>

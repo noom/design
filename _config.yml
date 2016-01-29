@@ -3,8 +3,8 @@ title: Noom Design Resources
 email: dux@noom.com
 description: > # this means to ignore newlines until "baseurl:"
   All things Noom design.
-baseurl: "http://noom.github.io/design" # the subpath of your site, e.g. /blog/
-url: "https://www.noom.com/" # the base hostname & protocol for your site
+baseurl: "/design" # the subpath of your site, e.g. /blog/
+url: "http://noom.github.io/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
