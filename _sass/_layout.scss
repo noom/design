@@ -249,20 +249,16 @@ section {
 
             @include media-query($on-palm) {
                 width: 100% !important;
-                float: none !important;
             }
         }
 
         description {
-            width: 40%;
-            float: left;
-            padding-right: $spaceXL;
-            clear: both;
+            display: block;
+            padding-top: 0;
         }
 
         example {
             width: 60%;
-            float: right;
             padding: $spaceXL;
             margin: $spaceL 0;
             box-shadow: 0px 1px 3px $grey;

@@ -203,8 +203,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(960px - (#{$spacing-unit} * 2));
-    max-width:         calc(960px - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(1024px - (#{$spacing-unit} * 2));
+    max-width:         calc(1024px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -232,6 +232,13 @@ pre {
         clear: both;
     }
 }
+
+/*
+ * Change selection colour
+ */
+
+ ::-moz-selection { background: $pbr_light; }
+ ::selection { background: $pbr_light; }
 
 
 
