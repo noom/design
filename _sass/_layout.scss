@@ -161,10 +161,31 @@
  * Page content
  */
 navigation.in-page-nav {
+    position: fixed;
+    left: 0;
+    margin: $spaceXXH;
+    font-size: $fontXS;
+    max-width: none;
+
     ul {
         list-style: none;
         margin-left: 0;
     }
+
+    &:hover ul {
+    }
+
+    @include media-query(1500px) {
+        margin: $spaceXXL;
+        max-width: 128px;
+    }
+
+    @include media-query(1224px) {
+        position: static;
+        font-size: $fontM;
+        margin: 0;
+    }
+
 }
 
 .page-content {
@@ -265,6 +286,10 @@ section {
             border-radius: 2px;
             @extend %clearfix;
 
+            &.clear-space {
+                padding: 0;
+            }
+
             typeSample:last-child {
                 margin-bottom: 0;
             }
@@ -288,7 +313,6 @@ section {
             display: inline-block;
             width: $card-width;
             box-shadow: 0px 1px 3px $grey;
-            // padding: $spaceXXL;
             margin: $spaceXS;
             border-radius: 2px;
             overflow: hidden;
