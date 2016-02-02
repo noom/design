@@ -4,9 +4,12 @@
 .site-header {
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
 }
 
 .site-title {
@@ -117,21 +120,24 @@
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
+
+    ul {
+        margin-bottom: 0;
+    }
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
 
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    img {
+        float: right;
+    }
 }
 
 @include media-query($on-laptop) {
@@ -139,11 +145,10 @@
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         width:         calc(50% - (#{$spacing-unit} / 2));
-    }
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        img {
+            float: none;
+        }
     }
 }
 
@@ -163,8 +168,9 @@
 navigation.in-page-nav {
     position: fixed;
     left: 0;
-    margin: $spaceXXH;
-    font-size: $fontXS;
+    top: 0;
+    margin: $spaceXXXH;
+    font-size: $fontM;
     max-width: none;
 
     ul {
@@ -172,11 +178,8 @@ navigation.in-page-nav {
         margin-left: 0;
     }
 
-    &:hover ul {
-    }
-
     @include media-query(1500px) {
-        margin: $spaceXXL;
+        margin: $spaceXXXH $spaceXL;
         max-width: 128px;
     }
 
@@ -189,7 +192,7 @@ navigation.in-page-nav {
 }
 
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spaceXXXH 0;
 }
 
 .page-heading {
