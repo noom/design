@@ -2,7 +2,11 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <!-- <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
+    <a class="site-title" href="{{ site.baseurl }}/">
+      <img src="{{ "/img/logo/noom_logo_small_blue@2x.png" | prepend: site.baseurl }}" class="logo" height="40px">
+      <span>Design</span>
+    </a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,9 +18,10 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title and page.displayInNav %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% for p in site.pages %}
+          {% if p.title and p.displayInNav %}
+            <a class="page-link" {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+
           {% endif %}
         {% endfor %}
       </div>
