@@ -28,59 +28,90 @@ $base-font-size:   $fontM;
 $small-font-size:  $fontS;
 $base-line-height: 1.5;
 
-// brand colours
-$violet_dark: #2f0062;
-$eggplant_dark: #6f1056;
-$apple_dark: #123806;
-$sea_dark: #005254;
-$cherry_dark: #9c0300;
-$watermelon_dark: #b12c37;
-$sun_dark: #c28800;
-$orange_dark: #c36000;
-$violet: #7a00fd;
-$eggplant: #bb4f9f;
-$apple: #16aa00;
-$sea: #30c1c5;
-$cherry: #e73b37;
-$watermelon: #f75462;
-$sun: #ffcf04;
-$orange: #ff8a1a;
-$violet_light: #b578f7;
-$eggplant_light: #d6a0c8;
-$apple_light: #83cd78;
-$cherry_light: #ec9694;
-$sea_light: #90d9db;
-$watermelon_light: #fba9b0;
-$sun_light: #ffe782;
-$orange_light: #f8bd85;
-$violet_lightest: #f1e4ff;
-$eggplant_lightest: #fdddf5;
-$apple_lightest: #e9ffe3;
-$sea_lightest: #e4feff;
-$watermelon_lightest: #ffdee1;
-$cherry_lightest: #ffdad9;
-$orange_lightest: #ffe7cf;
-$sun_lightest: #fff5cd;
-$pbr_dark: #183c78;
+//Brand Color Palette
 $pbr: #447ad4;
+$pbr_6: #183c78;
+$pbr_3: #a1bce9;
+$pbr_1: #ecf2fb;
+
+// Primary Color Palette
+$apple: #16aa00;
+$apple_6: #123806;
+$apple_3: #83cd78;
+$apple_1: #e9ffe3;
+$cherry: #e73b37;
+$cherry_6: #9c0300;
+$cherry_3: #ec9694;
+$cherry_1: #ffdad9;
+$eggplant: #bb4f9f;
+$eggplant_6: #6f1056;
+$eggplant_3: #d6a0c8;
+$eggplant_1: #fdddf5;
 $grey: #969696;
-$grey_light: #cacaca;
-$pbr_lightest: #ecf2fb;
-$pbr_light: #a1bce9;
-$grey_lightest: #f2f2f2;
-$grey_dark: #4d4d4d;
+$grey_6: #4d4d4d;
+$grey_3: #cacaca;
+$grey_1: #f2f2f2;
+$orange: #ff8a1a;
+$orange_6: #c36000;
+$orange_3: #f8bd85;
+$orange_1: #ffe7cf;
+$sea: #30c1c5;
+$sea_6: #005254;
+$sea_3: #90d9db;
+$sea_1: #e4feff;
+$sun: #ffcf04;
+$sun_6: #c28800;
+$sun_3: #ffe782;
+$sun_1: #fff5cd;
+$violet: #7a00fd;
+$violet_6: #2f0062;
+$violet_3: #b578f7;
+$violet_1: #f1e4ff;
+$watermelon: #f75462;
+$watermelon_6: #b12c37;
+$watermelon_3: #fba9b0;
+$watermelon_1: #ffdee1;
 
-$color_names: violet_dark eggplant_dark apple_dark sea_dark cherry_dark watermelon_dark sun_dark orange_dark eggplant violet apple sea cherry watermelon sun orange violet_light eggplant_light apple_light sea_light cherry_light watermelon_light sun_light orange_light violet_lightest eggplant_lightest apple_lightest sea_lightest cherry_lightest watermelon_lightest sun_lightest orange_lightest pbr_dark pbr pbr_light pbr_lightest grey_dark grey grey_light grey_lightest;
-$color_vars: $violet_dark $eggplant_dark $apple_dark $sea_dark $cherry_dark $watermelon_dark $sun_dark $orange_dark $eggplant $violet $apple $sea $cherry $watermelon $sun $orange $violet_light $eggplant_light $apple_light $sea_light $cherry_light $watermelon_light $sun_light $orange_light $violet_lightest $eggplant_lightest $apple_lightest $sea_lightest $cherry_lightest $watermelon_lightest $sun_lightest $orange_lightest $pbr_dark $pbr $pbr_light $pbr_lightest $grey_dark $grey $grey_light $grey_lightest;
+// Extended Primary Color Palette
 
-$text-color:       $grey_dark;
+$grey_2: #D5D5D5;
+$grey_4: #8d8d8d;
+$cherry_2: #FFCDD2;
+$cherry_4: #EF5350;
+$watermelon_2: #FFC2C7;
+$watermelon_4: #FF7B85;
+$orange_2: #FFD0A3;
+$orange_4: #FF9937;
+$apple_2: #C8E6C9;
+$apple_4: #66BB6A;
+$sea_2: #B2F4F5;
+$sea_4: #6DD3D6;
+$pbr_2: #CDDFFE;
+$pbr_4: #6895DF;
+$violet_2: #D5B2FC;
+$violet_4: #A562F0;
+$eggplant_2: #F3BFE5;
+$eggplant_4: #D175B9;
+$sun_2: #FFECB3;
+$sun_4: #FFD54F;
+
+
+// Secondary Palette
+
+
+$color_names: violet_6 eggplant_6 apple_6 sea_6 cherry_6 watermelon_6 sun_6 orange_6 eggplant violet apple sea cherry watermelon sun orange eggplant_4 violet_4 apple_4 sea_4 cherry_4 watermelon_4 sun_4 orange_4 violet_3 eggplant_3 apple_3 sea_3 cherry_3 watermelon_3 sun_3 orange_3 eggplant_2 violet_2 apple_2 sea_2 cherry_2 watermelon_2 sun_2 orange_2 violet_1  eggplant_1 apple_1 sea_1 cherry_1 watermelon_1 sun_1 orange_1 pbr_6 pbr pbr_3 pbr_1 grey_6 grey grey_3 grey_1 grey_4 grey_2 pbr_4 pbr_2;
+$color_vars: $violet_6 $eggplant_6 $apple_6 $sea_6 $cherry_6 $watermelon_6 $sun_6 $orange_6 $eggplant $violet $apple $sea $cherry $watermelon $sun $orange $eggplant_4 $violet_4 $apple_4 $sea_4 $cherry_4 $watermelon_4 $sun_4 $orange_4 $violet_3 $eggplant_3 $apple_3 $sea_3 $cherry_3 $watermelon_3 $sun_3 $orange_3 $eggplant_2 $violet_2 $apple_2 $sea_2 $cherry_2 $watermelon_2 $sun_2 $orange_2 $violet_1 $eggplant_1 $apple_1 $sea_1 $cherry_1 $watermelon_1 $sun_1 $orange_1 $pbr_6 $pbr $pbr_3 $pbr_1 $grey_6 $grey $grey_3 $grey_1 $grey_4 $grey_2 $pbr_4 $pbr_2;
+
+
+
+$text-color:       $grey_6;
 $background-color: #ffffff;
 $brand-color:      $pbr;
-$brand-color-dark: $pbr_dark;
+$brand-color-dark: $pbr_6;
 
 $grey-color:       $grey;
-$grey-color-light: $grey_lightest;
-$grey-color-dark:  $grey_dark;
+$grey-color-light: $grey_1;
+$grey-color-dark:  $grey_6;
 
 // spacing units
 $spaceXS: 2px;

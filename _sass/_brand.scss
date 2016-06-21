@@ -29,8 +29,8 @@ section {
     font-size: $fontL;
     font-weight: 500;
     color: $brand-color;
-    border-top: 1px solid $grey_light;
-    border-bottom: 1px solid $grey_light;
+    border-top: 1px solid $grey_3;
+    border-bottom: 1px solid $grey_3;
     padding: $spaceM 0;
   }
 
@@ -71,6 +71,7 @@ section {
     }
   }
 
+
 .color-container {
   position: relative;
 
@@ -109,6 +110,7 @@ section {
       &:before, &:after {
         top: $spaceXXXL*2;
       }
+
     }
 
 

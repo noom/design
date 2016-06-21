@@ -177,6 +177,7 @@
 
 
 
+
 /**
  * Page content
  */
@@ -340,7 +341,7 @@ section {
             overflow: hidden;
 
             &:hover {
-                box-shadow: 0px 1px 4px $grey-dark;
+                box-shadow: 0px 1px 4px $grey_6;
             }
 
             @include media-query($on-palm) {
@@ -355,7 +356,7 @@ section {
 
 
             .card-title {
-                color: $grey_dark;
+                color: $grey_6;
                 width: 100%;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -366,7 +367,7 @@ section {
             .card-content {
                 display: block;
                 height: $spaceH;
-                color: $grey_dark;
+                color: $grey_6;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 padding: 0 $spaceXXL;
