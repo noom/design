@@ -4,6 +4,18 @@ section {
     clear: both;
   }
 
+  .button {
+    padding-left: 0;
+
+    &.multiple {
+      padding-left: 100px;
+    }
+  }
+
+  &.sub-section {
+    border-top: 1px solid $grey_2;
+  }
+
   typeSample.headings {
     font-size: $fontH;
   }
@@ -71,9 +83,12 @@ section {
     }
   }
 
-
 .color-container {
   position: relative;
+
+    &.secondary {
+      max-width: 700px;
+    }
 
   .color-swatch {
     display: inline-block;
@@ -82,9 +97,12 @@ section {
     border-radius: 50%;
     margin: 0 $spaceH $spaceXH 0;
 
+
     @include media-query($on-palm) {
         margin-right: $spaceXXL;
     }
+
+
 
     &:before, &:after {
       font-size: $fontXXS;
@@ -103,12 +121,19 @@ section {
       top: $spaceXXL;
     }
 
+    &.primary_shade {
+      vertical-align: bottom;
+    }
+
     &.primary {
       width: 100px;
       height: 100px;
 
+
       &:before, &:after {
-        top: $spaceXXXL*2;
+        top: $spaceXXXL*2 + 8px;
+        display: block;
+        text-align: center;
       }
 
     }

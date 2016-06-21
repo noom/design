@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
+    box-shadow: 0px 3px 2px $grey_2;
     min-height: 56px;
     width: 100%;
     z-index: 1;
@@ -184,25 +184,31 @@
 navigation.in-page-nav {
     position: fixed;
     left: 0;
-    top: 0;
-    margin: $spaceXXXH;
+    top: -23px;
     font-size: $fontM;
-    max-width: none;
+    padding: 100px 32px 0 32px;;
+    height: 100vh;
+    border-right: 2px solid $grey_1;
+    background-color: #ffffff;
 
     ul {
         list-style: none;
         margin-left: 0;
+
+        li {
+            margin: $spaceM 0;
+        }
     }
 
     @include media-query(1500px) {
-        margin: $spaceXXXH $spaceXL;
-        max-width: 128px;
+        padding-top: 100px;
     }
 
     @include media-query(1224px) {
         position: static;
         font-size: $fontM;
-        margin: 0;
+        border: none;
+        background: none;
     }
 
 }

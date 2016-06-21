@@ -47,9 +47,9 @@ $eggplant: #bb4f9f;
 $eggplant_6: #6f1056;
 $eggplant_3: #d6a0c8;
 $eggplant_1: #fdddf5;
-$grey: #969696;
+$grey: #6B6B6B;
 $grey_6: #4d4d4d;
-$grey_3: #cacaca;
+$grey_3: #B1B1B1;
 $grey_1: #f2f2f2;
 $orange: #ff8a1a;
 $orange_6: #c36000;
@@ -98,9 +98,58 @@ $sun_4: #FFD54F;
 
 // Secondary Palette
 
+$mist_1: #ECEFF1;
+$mist_2: #CFD8DC;
+$mist_3: #78909C;
+$mist_4: #607D8B;
+$mist: #37474F;
+$mist_6: #263238;
+$wood_1: #EFEBE9;
+$wood_2: #D7CCC8;
+$wood_3: #BCAAA4;
+$wood_4: #A1887F;
+$wood: #8D6E63;
+$wood_6: #795548;
+$bloodorange_1: #FFEBE6;
+$bloodorange_2: #FFCDC1;
+$bloodorange_3: #FF9D86;
+$bloodorange_4: #F5876D;
+$bloodorange: #EC6F52;
+$bloodorange_6: #C55B43;
+$fanta_1: #FFF3E0;
+$fanta_2: #FFE0B2;
+$fanta_3: #FFCC80;
+$fanta_4: #FFB74D;
+$fanta: #FFA726;
+$fanta_6: #C87700;
+$moss_1: #E8F5E9;
+$moss_2: #C8E6C9;
+$moss_3: #81C784;
+$moss_4: #66BB6A;
+$moss: #4CAF50;
+$moss_6: #365D38;
+$teal_1: #E0F2F1;
+$teal_2: #B2DFDB;
+$teal_3: #80CBC4;
+$teal_4: #4DB6AC;
+$teal: #26A69A;
+$teal_6: #009688;
+$techypbr_1: #E3F2FD;
+$techypbr_2: #BBDEFB;
+$techypbr_3: #90CAF9;
+$techypbr_4: #42A5F5;
+$techypbr: #2196F3;
+$techypbr_6: #0B7AD2;
+$indigo_1: #E8EAF6;
+$indigo_2: #C5CAE9;
+$indigo_3: #9FA8DA;
+$indigo_4: #7986CB;
+$indigo: #5C6BC0;
+$indigo_6: #3F51B5;
 
-$color_names: violet_6 eggplant_6 apple_6 sea_6 cherry_6 watermelon_6 sun_6 orange_6 eggplant violet apple sea cherry watermelon sun orange eggplant_4 violet_4 apple_4 sea_4 cherry_4 watermelon_4 sun_4 orange_4 violet_3 eggplant_3 apple_3 sea_3 cherry_3 watermelon_3 sun_3 orange_3 eggplant_2 violet_2 apple_2 sea_2 cherry_2 watermelon_2 sun_2 orange_2 violet_1  eggplant_1 apple_1 sea_1 cherry_1 watermelon_1 sun_1 orange_1 pbr_6 pbr pbr_3 pbr_1 grey_6 grey grey_3 grey_1 grey_4 grey_2 pbr_4 pbr_2;
-$color_vars: $violet_6 $eggplant_6 $apple_6 $sea_6 $cherry_6 $watermelon_6 $sun_6 $orange_6 $eggplant $violet $apple $sea $cherry $watermelon $sun $orange $eggplant_4 $violet_4 $apple_4 $sea_4 $cherry_4 $watermelon_4 $sun_4 $orange_4 $violet_3 $eggplant_3 $apple_3 $sea_3 $cherry_3 $watermelon_3 $sun_3 $orange_3 $eggplant_2 $violet_2 $apple_2 $sea_2 $cherry_2 $watermelon_2 $sun_2 $orange_2 $violet_1 $eggplant_1 $apple_1 $sea_1 $cherry_1 $watermelon_1 $sun_1 $orange_1 $pbr_6 $pbr $pbr_3 $pbr_1 $grey_6 $grey $grey_3 $grey_1 $grey_4 $grey_2 $pbr_4 $pbr_2;
+
+$color_names: violet_6 eggplant_6 apple_6 sea_6 cherry_6 watermelon_6 sun_6 orange_6 eggplant violet apple sea cherry watermelon sun orange eggplant_4 violet_4 apple_4 sea_4 cherry_4 watermelon_4 sun_4 orange_4 violet_3 eggplant_3 apple_3 sea_3 cherry_3 watermelon_3 sun_3 orange_3 eggplant_2 violet_2 apple_2 sea_2 cherry_2 watermelon_2 sun_2 orange_2 violet_1  eggplant_1 apple_1 sea_1 cherry_1 watermelon_1 sun_1 orange_1 pbr_6 pbr pbr_3 pbr_1 grey_6 grey grey_3 grey_1 grey_4 grey_2 pbr_4 pbr_2 mist_1 mist_2 mist_3 mist_4 mist mist_6 wood_1 wood_2 wood_3 wood_4 wood wood_6 bloodorange_1 bloodorange_2 bloodorange_3 bloodorange_4 bloodorange bloodorange_6 fanta_1 fanta_2 fanta_3 fanta_4 fanta fanta_6 moss_1 moss_2 moss_3 moss_4 moss moss_6  teal_1 teal_2 teal_3 teal_4 teal teal_6 techypbr_1 techypbr_2 techypbr_3 techypbr_4 techypbr techypbr_6  indigo_1 indigo_2 indigo_3 indigo_4 indigo indigo_6;
+$color_vars: $violet_6 $eggplant_6 $apple_6 $sea_6 $cherry_6 $watermelon_6 $sun_6 $orange_6 $eggplant $violet $apple $sea $cherry $watermelon $sun $orange $eggplant_4 $violet_4 $apple_4 $sea_4 $cherry_4 $watermelon_4 $sun_4 $orange_4 $violet_3 $eggplant_3 $apple_3 $sea_3 $cherry_3 $watermelon_3 $sun_3 $orange_3 $eggplant_2 $violet_2 $apple_2 $sea_2 $cherry_2 $watermelon_2 $sun_2 $orange_2 $violet_1 $eggplant_1 $apple_1 $sea_1 $cherry_1 $watermelon_1 $sun_1 $orange_1 $pbr_6 $pbr $pbr_3 $pbr_1 $grey_6 $grey $grey_3 $grey_1 $grey_4 $grey_2 $pbr_4 $pbr_2 $mist_1 $mist_2 $mist_3 $mist_4 $mist $mist_6 $wood_1 $wood_2 $wood_3 $wood_4 $wood $wood_6 $bloodorange_1 $bloodorange_2 $bloodorange_3 $bloodorange_4 $bloodorange $bloodorange_6 $fanta_1 $fanta_2 $fanta_3 $fanta_4 $fanta $fanta_6 $moss_1 $moss_2 $moss_3 $moss_4 $moss $moss_6 $teal_1 $teal_2 $teal_3 $teal_4 $teal $teal_6 $techypbr_1 $techypbr_2 $techypbr_3 $techypbr_4 $techypbr $techypbr_6 $indigo_1 $indigo_2 $indigo_3 $indigo_4 $indigo $indigo_6;;
 
 
 
