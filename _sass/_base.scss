@@ -203,12 +203,13 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(1024px - (#{$spacing-unit} * 2));
+    //max-width: -webkit-calc(1024px - (#{$spacing-unit} * 2));
     max-width:         calc(1024px - (#{$spacing-unit} * 2));
+    margin: 0 auto;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-left: 24px;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
