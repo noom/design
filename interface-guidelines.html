@@ -5,7 +5,6 @@ permalink: interface-guidelines/
 displayInNav: true
 description: Detailed guidelines for standardizing the Noom UI across platforms.
 ---
-
 <div class="in-page-nav-test">
     <h4>Jump to</h4>
     <ul>
@@ -28,21 +27,28 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
 <div class="wrapper-test">
     <section>
         <h1>UI Interface Guidelines</h1>
-        <description>These guidelines are intended to help standardize mockups and design for Noom's core application: Noom Coach. This does not include each individual element or interaction in the app, but rather aims to provide the design patterns which make up the core Noom Coach Features.
+        <description>These guidelines are intended to help standardize mockups and design for Noom's core application: Noom Coach. This does not include each individual element or interaction in the app, but rather aims to provide the design patterns which make up the core Noom Coach Features.</description>
     </section>
     <sections>
         <section id="general">
             <h2>General</h2>
-            <description>The Noom design system is comprised of a series of page design elements and modules which work together to shape the Noom experience. To the best of your ability, try to make sure that when creating new features for the application, the rules outlined in this system are followed. </description>
+            <div class="section-container">
+            <description>The Noom design system is comprised of a series of page design elements and modules which work together to shape the Noom experience. Use the rules outlined in this design system to create new features or functionality to ensure a consistent user experience. </description>
+            <description>The design team uses specific language when referring to specific locations/modules/screens in the app. The figure below describes these nicknames.</description>
+                <img src="{{ "/img/applayout.png" | prepend: site.baseurl }}" class="twox">
+            </div>
         </section>
         <section id="color">
             <h2>Color</h2>
             <description>While Noom has a variety of colors in its palette, the colors used in the app are limited to the primary color palette. The exception to this rule are the in-app illustrations, which can included colors from the extended palette. The main app color is pbr. </description>
-            <h3>Primary In-App Color</h3>
+            <h3>Primary Color</h3>
+            <div class="section-container">
+             <description>The primary color used throughout the app is pbr. Note that the primary in-app color does not include the various shades of pbr; only pbr itself.</description>
             <div class="color-container">
-                <div class="color-swatch primary pbr"></div>
+                <div class="color-swatch pbr"></div>
             </div>
-            <div class="section-container">Note that the primary in-app color does not include the various shades of pbr; only pbr itself.</div>
+            </div>
+           
             <h3>Primary Color Palette</h3>
             <div class="section-container">
                 <description>The primary color palette consists of 10 colors, each with 4 shades. Keep in mind readability and mood-associated colors when selecting which shade/color to use - i.e. using cherry or orange may be associated with a warning.</description>
@@ -88,13 +94,21 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
                     <div class="color-swatch eggplant_3"></div>
                     <div class="color-swatch eggplant_1"></div>
                 </div>
-
             </div>
-            <h3>Text Color</h3>
         </section>
         <section id="text">
             <h2>Text</h2>
-            <description>As outlined in the Brand Guide, the only typeface used is Roboto. The color, size and weight of the font depends on each use case, and is outlined below.</description>
+            <div class="section-container">
+                <description>As outlined in the Brand Guide, the only typeface used is Roboto. The font color, size and weight depends on each use case, and is outlined below. Note that the default color for text colors is grey.</description>
+                <div class="color-container primary">
+                    <div class="color-swatch primary grey_6"></div>
+                </div>
+            </div>
+            <h3>Heading</h3>
+            <h3>Sub-Heading</h3>
+            <h3>Body</h3>
+            <h3>Clickable text</h3>
+            <h3>CTA</h3>
             <h3>Type sample</h3>
             <div class="section-container">
                 <description>The sections above display the font styles that are available. Here, we outline the type styles that are employed throughout the app. The uses of the different type styles should remain consistent across the app and cross platform.</description>
