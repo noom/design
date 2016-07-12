@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: $fontXH;
+    font-size: $fontH;
     font-weight: 300;
 }
 
@@ -204,7 +204,7 @@ pre {
  */
 .wrapper {
     //max-width: -webkit-calc(1024px - (#{$spacing-unit} * 2));
-    max-width:         calc(1024px - (#{$spacing-unit} * 2));
+    max-width:  calc(1024px - (#{$spacing-unit} * 2));
     margin: 0 auto;
     margin-right: auto;
     margin-left: auto;

@@ -1,27 +1,21 @@
 ---
-layout: default
+layout: test
 title: Home
 permalink: /
 displayInNav: false
 ---
 
-<div class="home">
 
-  <!-- <h1 class="page-heading">Posts</h1> -->
- <div class="page-content">
-      <div class="wrapper">
+
+<div class="wrapper-test">
   <section>
-    <div class="cards-list">
-      {% for page in site.pages %}
-        {% if page.title and page.displayInNav %}
-        <a class="project-card" href="{{ page.url | prepend: site.baseurl }}">
-          <div class="card-header-img"></div>
-          <h2 class="card-title">{{ page.title }}</h2>
-          <span class="card-content">{{ page.description }}</span>
-        </a>
-        {% endif %}
-      {% endfor %}
-    </div>
+    <h1>Introduction</h1>
+    <description>Quisque sit amet congue enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque lobortis, justo sit amet ornare tincidunt, sem augue tincidunt turpis, nec tempor orci eros sed tortor. Nulla ullamcorper sit amet turpis vel placerat. Sed nec dolor tellus. Maecenas porta, leo in maximus tincidunt, turpis dui vehicula ex, eget hendrerit lectus purus in lectus. Nam nec enim sapien.</description>
   </section>
 
 </div>
+{% for post in site.posts %}
+
+{{ post.content }}
+
+{% endfor %}
