@@ -1,18 +1,19 @@
 <div class="in-page-nav-test">
     <!-- <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
     <a class="site-title" href="{{ site.baseurl }}/">
-      <img src="{{ "/img/logo/noom_logo_small_blue@2x.png" | prepend: site.baseurl }}" class="logo">
+        <img src="{{ "/img/logo/noom_logo_small_blue@2x.png" | prepend: site.baseurl }}" class="logo">
     </a>
     <div class="mobile-nav">
-        <svg width=30 height="21">
-            <rect x="0" y="2" rx="2" ry="2" width="30" height="3" style="fill:#6b6b6b;" />
-            <rect x="0" y="10" rx="2" ry="2" width="30" height="3" style="fill:#6b6b6b;" />
-            <rect x="0" y="18" rx="2" ry="2" width="30" height="3" style="fill:#6b6b6b;">
+        <svg width=30 height="21"/>
+        <rect x="0" y="2" rx="2" ry="2" width="30" height="3" style="fill:#6b6b6b;" />
+        <rect x="0" y="10" rx="2" ry="2" width="30" height="3" style="fill:#6b6b6b;" />
+        <rect x="0" y="18" rx="2" ry="2" width="30" height="3" style="fill:#6b6b6b;">
     </div>
+
     <div class="holder">
         <ul>
-            <li><a href="">Introduction</a></li>
-            <li><a class="dropdown-head" href="#">iOS App</a>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a class="dropdown-head" href="#ui-guidelines">App UI Guidelines</a>
                 <ul class="dropdown">
                     <li><a href="#general">General</a></li>
                     <li><a href="#text">Text</a></li>
@@ -24,7 +25,31 @@
                     <li><a href="#fsmodals">Full Screen Modals</a></li>
                 </ul>
             </li>
-            <li><a class="dropdown-head" href="#">Brand</a>
+            <li><a class="dropdown-head" href="#dashboard">Dashboard</a>
+                <ul class="dropdown">
+                    <li><a href="#general">General</a></li>
+                    <li><a href="#text">Text</a></li>
+                    <li><a href="#icons">Icons</a></li>
+                    <li><a href="#illustrations">Illustrations</a></li>
+                    <li><a href="#inputs">Inputs</a></li>
+                    <li><a href="#appbar">App Bar</a></li>
+                    <li><a href="#gophers">Gophers</a></li>
+                    <li><a href="#fsmodals">Full Screen Modals</a></li>
+                </ul>
+            </li>
+            <li><a class="dropdown-head" href="#marketing">Marketing Site</a>
+                <ul class="dropdown">
+                    <li><a href="#general">General</a></li>
+                    <li><a href="#text">Text</a></li>
+                    <li><a href="#icons">Icons</a></li>
+                    <li><a href="#illustrations">Illustrations</a></li>
+                    <li><a href="#inputs">Inputs</a></li>
+                    <li><a href="#appbar">App Bar</a></li>
+                    <li><a href="#gophers">Gophers</a></li>
+                    <li><a href="#fsmodals">Full Screen Modals</a></li>
+                </ul>
+            </li>
+            <li><a class="dropdown-head" href="#brand">Brand</a>
                 <ul class="dropdown">
                     <li><a href="#values">Brand Values</a></li>
                     <li><a href="#logo">Logo</a></li>
@@ -36,9 +61,9 @@
                     <li><a href="#layout">Layout</a></li>
                 </ul>
             </li>
-            <li><a href="">Android App</a></li>
         </ul>
     </div>
+
     <div class="header-bottom">
         <ul class="contact-list">
             <li>{{ site.description }}</li>

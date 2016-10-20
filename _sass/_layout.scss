@@ -8,8 +8,7 @@
 
  .wrapper-test {
     margin: 0 auto;
-    padding: 20px 0 0 100px;
-    max-width: 1000px;
+    padding: 20px 20px 0 245px;
 
     @include media-query($desktopXL) {
         position: relative;
@@ -388,28 +387,31 @@
     }
 }
 
+description {
+    padding: $spaceL 0;
+    @include media-query($on-palm) {
+        width: 100% !important;
+    }
+    display: block;
+    padding-top: 0;
+}
+
 section {
     background-color: $white;
     padding: $spaceM;
+    box-shadow: 0px 1px 3px $grey_2;
 
     .section-container {
         @extend %clearfix;
-        description,
         example {
+            width: 80%;
             padding: $spaceL 0;
             @include media-query($on-palm) {
                 width: 100% !important;
             }
-        }
-        description {
-            display: block;
-            padding-top: 0;
-        }
-        example {
-            width: 60%;
             padding: $spaceXL;
-            margin: $spaceL 0;
-            box-shadow: 0px 1px 3px $grey;
+            margin: $spaceL auto;
+            box-shadow: 0px 1px 3px $grey_2;
             border-radius: 2px;
             @extend %clearfix;
             @include media-query($on-palm) {

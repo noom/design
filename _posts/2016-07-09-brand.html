@@ -7,14 +7,13 @@ description: Outlines proper use of Noom brand and its assets.
 ---
 
 <body ng-controller="BrandCtrl">
-	<div class="wrapper-test">
-
+	<div class="wrapper-test" id="brand">
 		<section>
 			<h1>Brand Guide</h1>
 			<description>This guide outlines the values, assets and usage of the Noom brand. These guidelines should be followed in all media in which the Noom brand is present.</description>
 		</section>
 
-		<section id="values"section>
+		<section id="values" section>
 			<h2>Brand Values</h2>
 			<description>
 				To be added once we have had a full brand discussion.
@@ -22,7 +21,7 @@ description: Outlines proper use of Noom brand and its assets.
 		</section>
 
 
-		<section id="logo"section>
+		<section id="logo" section>
 			<h2>Logo</h2>
 
 			<h3>Primary logo</h3>
@@ -52,6 +51,7 @@ description: Outlines proper use of Noom brand and its assets.
 
 				<example class="clearfix">
 					<img src="{{ "/img/logo/noom_logo_big_blue.png" | prepend: site.baseurl }}" class="logo">
+					<br>
 					<captionText>The <strong>big</strong> version of the Noom logo has 3 rows of dots.</captionText>
 				</example>
 
@@ -375,8 +375,6 @@ description: Outlines proper use of Noom brand and its assets.
 			</div>
 		</section>
 
-
-
 		<section id="photography" section>
 			<h2>Photography</h2>
 
@@ -505,22 +503,21 @@ description: Outlines proper use of Noom brand and its assets.
 					</photograph>
 				</example>
 			</div>
+		</section>
 
+		<section id="layout" section>
+			<h2>Layout</h2>
 
-			<section id="layout" section>
-				<h2>Layout</h2>
+			<description>The layout patterns in the following section should not be applied to the Noom Coach App. These are more for the Noom website and other marketing material.</description>
 
-				<description>The layout patterns in the following section should not be applied to the Noom Coach App. These are more for the Noom website and other marketing material.</description>
+			<h3>Website</h3>
+			<div class="section-container">
+				<description>The website layout follows a twelve column grid system</description>
 
-				<h3>Website</h3>
-				<div class="section-container">
-					<description>The website layout follows a twelve column grid system</description>
-
-					<example class="clearfix">
-						<img src="{{ "/img/web.png" | prepend: site.baseurl }}">
-					</example>
-				</div>
-			</section>
+				<example class="clearfix">
+					<img src="{{ "/img/web.png" | prepend: site.baseurl }}">
+				</example>
+			</div>
 		</section>
 	</div>
 </body>

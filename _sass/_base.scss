@@ -51,6 +51,8 @@ ul, ol, dl, figure, section, typeSample,
 img {
     max-width: 100%;
     vertical-align: middle;
+    display: block;
+    margin: auto;
 }
 
 
@@ -95,12 +97,16 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: $fontH;
     font-weight: 300;
+    padding-bottom: 12px;
+    border-bottom: solid 1px $grey_2;
 }
 
 h2 {
     font-size: $fontXXXL;
     font-weight: 300;
-    margin-top: $spaceXL;
+    padding-bottom: 12px;
+    border-bottom: solid 1px $grey_2;
+    // margin-top: $spaceXL;
 }
 
 h3 {
