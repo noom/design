@@ -34,6 +34,28 @@
     }
 }
 
+.activeDiv {
+    display: block;
+}
+
+.hiddenDiv {
+    display: none;
+}
+
+.landing-logo
+{
+    width: 40%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+.container {
+    display: block;
+    margin: 50px auto;
+}
+.container img {
+    float: left;
+}
 /**
  * Site left nav
  */

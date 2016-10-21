@@ -24,10 +24,14 @@ $(document).ready(function() {
 	// });
 
 	$('.showSingle').click(function () {
-		$('.targetDiv').hide();
+		$('.wrapper-test').removeClass('activeDiv');
+		$('.wrapper-test').addClass('hiddenDiv');
+		$('#' + $(this).attr('target')).addClass("activeDiv");;
+		$('#' + $(this).attr('target')).removeClass("hiddenDiv");;
 		$('.showSingle').removeClass('active');
-		$(this).addClass("active")
-		$('#' + $(this).attr('target')).show();
+		$(this).addClass("active");
+		// $('#' + $(this).attr('target')).show();
+
 	});
 
 	$(".mobile-nav").click(function() {

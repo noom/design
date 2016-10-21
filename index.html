@@ -5,25 +5,18 @@ permalink: /
 displayInNav: false
 ---
 
-
-
 <div class="wrapper-test" id="intro">
-  <section >
-    <h1>Introduction</h1>
-    <description>Quisque sit amet congue enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque lobortis, justo sit amet ornare tincidunt, sem augue tincidunt turpis, nec tempor orci eros sed tortor. Nulla ullamcorper sit amet turpis vel placerat. Sed nec dolor tellus. Maecenas porta, leo in maximus tincidunt, turpis dui vehicula ex, eget hendrerit lectus purus in lectus. Nam nec enim sapien.</description>
-  </section>
-
-<ul>
-    <li>
-        <a class="showSingle" target="brand">brand content</a>
-    </li>
-    <li>
-        <a class="showSingle" target="web">web content</a>
-    </li>
-</ul>
-<div id="brand" class="targetDiv">brand content</div>
-<div id="web" class="targetDiv" style="display:none">web content</div>
+	<div class="container">
+		<object class="landing-logo" data="img/DUX.svg" type="image/svg+xml">
+			<img src="img/mobile.png"/>
+		</object>
+	</div>
+	<section >
+		<h1>General</h1>
+		<description>THE TEAM THAT NEEDS NO INTRODUCTION. IT'S D-D-D-D-DUX! </description>
+	</section>
 </div>
+
 {% for post in site.posts %}
 
 {{ post.content }}
