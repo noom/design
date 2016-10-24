@@ -27,8 +27,16 @@
     }
 }
 
+section li {
+    line-height: 32px;
+}
+
+section img {
+    margin-bottom: $spaceL;
+}
 
 .page-content {
+    height: 100%;
     @include media-query($tablet){
         margin-top: 80px;
     }
@@ -48,13 +56,11 @@
     max-width: 500px;
     display: block;
     margin: auto;
+    margin-top: 20vh;
 }
 .container {
     display: block;
     margin: 50px auto;
-}
-.container img {
-    float: left;
 }
 /**
  * Site left nav
@@ -417,7 +423,6 @@ description {
     display: block;
     padding-top: 0;
 }
-
 section {
     background-color: $white;
     padding: $spaceM;

@@ -111,14 +111,12 @@ h2 {
 
 h3 {
     font-size: $fontL;
-    margin-top: $spaceXL;
+    margin-top: $spaceL;
 }
 
 h4 {
-    font-size: $fontS;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-bottom: 0;
+    font-weight: 500;
+    margin-bottom: $spaceM;
 }
 
 .light {
@@ -146,6 +144,7 @@ a {
     color: $brand-color;
     text-decoration: none;
     transition: all $transition-time;
+    cursor: pointer;
 
     &:visited {
         color: $brand-color;
@@ -232,7 +231,6 @@ pre {
  * Clearfix
  */
 %clearfix {
-
     &:after {
         content: "";
         display: table;

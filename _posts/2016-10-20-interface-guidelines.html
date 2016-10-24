@@ -12,20 +12,128 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
         <description>We want to create harmonious experiences for our users at Noom, and we do this by applying solutions consistently across our product suite, and promoting learnability.
         </description>
         <description>
-        This section of the These guidelines are intended to help standardize mockups and design for Noom's core application: Noom Coach. This does not include each individual element or interaction in the app, but rather aims to provide the design patterns which make up the core Noom Coach Features.
+        This section of the guidelines is intended to help standardize mockups and designs for Noom's core application: Noom Coach. This does not include each individual element or interaction in the app, but rather aims to provide the design patterns which make up the core Noom Coach Features.
         </description>
         <description>
-        This guideline will be an on-going project, and will be continuously revised and expanded to suit changing product needs.
+        This guideline is be an on-going project, and will be revised and expanded continuously to suit changing product needs.
         </description>
     </section>
-    <sections>
-        <section id="general">
-            <h2>General</h2>
-            <div class="section-container">
-            <description>The Noom design system is comprised of a series of page design elements and modules which work together to shape the Noom experience. Use the rules outlined in this design system to create new features or functionality to ensure a consistent user experience. </description>
-            <description>The design team uses specific language when referring to specific locations/modules/screens in the app. The figure below describes these nicknames.</description>
-                <img src="{{ "/img/applayout.png" | prepend: site.baseurl }}" class="twox">
+    
+    <!-- General -->
+    <section id="general">
+        <h2>General</h2>
+        <div class="section-container">
+        <description>The Noom design system is comprised of a series of page design elements and modules which work together to shape the Noom experience. Use the rules outlined in this design system to create new features or functionality to ensure a consistent user experience. </description>
+        <description>The design team uses specific language when referring to specific locations/modules/screens in the app. The figure below describes these nicknames.</description>
+            <img src="{{ "/img/applayout.png" | prepend: site.baseurl }}" class="twox">
+        </div>
+    </section>
+
+    <!-- Buttons -->
+    <section id="buttons">
+        <h2>Buttons</h2>
+        <div class="section-container">
+            <description>Buttons are tactile elements in UI that users can interact with to perform a specific function. Well designed buttons give users foresight into what the intended purpose of the button is prior to the interaction, and provide feedback after the button has been pressed.</description>
+            
+            <h3>Types of Buttons</h3>
+            <h4>Text buttons</h4>
+            <description>Text buttons are text only buttons. They lay flat on the same plane as the main interface, and are commonly used in dialogs, nav bars, etc.</description>
+            <img src="{{ "/img/text-buttons.png" | prepend: site.baseurl }}" width="300px">
+            
+            <h4>Floating buttons</h4>
+            <description>Floating buttons represents the primary action in an application. They are on the highest layer in the hierarchy, and cast a drop shadow on the interface below. </description>
+            <img src="{{ "/img/floating-buttons.png" | prepend: site.baseurl }}" width="150px">
+
+            <h4>Full buttons</h4>
+            <description>Full buttons are rectangular buttons with rounded corners. They consist of text and a solid colored rectangular background. They are not raised and lay on the same plane as the main interface. Due to mobile behaviour, there are no post-interaction animations associated with these buttons (darkening). </description>
+            <img src="{{ "/img/full-buttons.png" | prepend: site.baseurl }}" width="350px">
+            
+            <h3>Hierarchies</h3>
+            <description>In situations where decision making is involved on the user's part, with one being the prominent option, button hierarchy is required. The primary action is the button that is considered the preferred action. </description> 
+            <description>For example, when a user is trying to delete an exercise entry, "Cancel" would be treated as the primary action, and would be given more visual prominence. In the case of dialog text buttons, the primary action should be on the right hand side of the dialog.</description>
+            <description>In the case of full buttons, the primary action should be described in the blue rectangular button, with the secondary action appearing below as a text button. </description>
+        </div>
+    </section>
+    
+    <!-- Buttons -->
+    <section id="cards">
+        <h2>Cards</h2>
+        <div class="section-container">
+        <description>Buttons are tactile elements in UI that users can interact with to perform a specific function. Well designed buttons give users foresight into what the intended purpose of the button is prior to the interaction, and provide feedback after the button has been pressed.</description>
+        
+        <h3>Types of Buttons</h3>
+        <h4>Text buttons</h4>
+        <description>Text buttons are text only buttons. They lay flat on the same plane as the main interface, and are commonly used in dialogs, nav bars, etc.</description>
+        <img src="{{ "/img/text-buttons.png" | prepend: site.baseurl }}" width="300px">
+        
+        <h4>Floating buttons</h4>
+        <description>Floating buttons represents the primary action in an application. They are on the highest layer in the hierarchy, and cast a drop shadow on the interface below. </description>
+        <img src="{{ "/img/floating-buttons.png" | prepend: site.baseurl }}" width="150px">
+
+        <h4>Full buttons</h4>
+        <description>Full buttons are rectangular buttons with rounded corners. They consist of text and a solid colored rectangular background. They are not raised and lay on the same plane as the main interface. Due to mobile behaviour, there are no post-interaction animations associated with these buttons (darkening). </description>
+        <img src="{{ "/img/full-buttons.png" | prepend: site.baseurl }}" width="350px">
+        
+        <h3>Hierarchies</h3>
+        <description>In situations where decision making is involved on the user's part, with one being the prominent option, button hierarchy is required. The primary action is the button that is considered the preferred action. </description> 
+        <description>For example, when a user is trying to delete an exercise entry, "Cancel" would be treated as the primary action, and would be given more visual prominence. In the case of dialog text buttons, the primary action should be on the right hand side of the dialog.</description>
+        <description>In the case of full buttons, the primary action should be described in the blue rectangular button, with the secondary action appearing below as a text button. </description>
+
+        </div>
+    </section>
+
+    <!-- Text -->
+    <section id="text">
+        <h2>Text</h2>
+        <div class="section-container">
+            <description>As outlined in the Brand Guide, the only typeface used is Roboto. The font color, size and weight depends on each use case, and is outlined below. Note that the default color for text colors is grey.</description>
+            <div class="color-container primary">
+                <div class="color-swatch primary grey_6"></div>
             </div>
-        </section>
-    </sections>
+        </div>
+        <h3>Heading</h3>
+        <h3>Sub-Heading</h3>
+        <h3>Body</h3>
+        <h3>Clickable text</h3>
+        <h3>CTA</h3>
+        <h3>Type sample</h3>
+        <div class="section-container">
+            <description>The sections above display the font styles that are available. Here, we outline the type styles that are employed throughout the app. The uses of the different type styles should remain consistent across the app and cross platform.</description>
+            <example class="clearfix">
+                <typeSample class="headings">Headings</typeSample>
+                <typeSample class="task-card">Task Card</typeSample>
+                <typeSample class="body-text">Body</typeSample>
+                <typeSample class="informational">Informational</typeSample>
+                <typeSample class="clickable-list">Clickable List</typeSample>
+                <typeSample class="clickable-text">Clickable Text</typeSample>
+                <typeSample class="button-text">Button</typeSample>
+            </example>
+        </div>
+        <h3>Sizing chart</h3>
+        <a class="button" href="{{ "/img/spacing_font_sizes.pdf " | prepend: site.baseurl }}">&#11015; Download font size chart</a>
+    </section>
+
+    <section id="icons">
+        <h2>Icons</h2>
+    </section>
+
+    <section id="illustrations">
+        <h2>Illustrations</h2>
+    </section>
+
+    <section id="inputs">
+        <h2>Inputs</h2>
+    </section>
+
+    <section id="appbar">
+        <h2>App Bar</h2>
+    </section>
+
+    <section id="gophers">
+        <h2>Gophers</h2>
+    </section>
+
+    <section id="fsmodals">
+        <h2>Full Screen Modals</h2>
+    </section>
 </div>
