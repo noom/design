@@ -20,8 +20,8 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
     </section>
     
     <!-- General -->
-    <section id="general">
-        <h2>General</h2>
+    <section id="intro">
+        <h2>Introduction</h2>
         <div class="section-container">
         <description>The Noom design system is comprised of a series of page design elements and modules which work together to shape the Noom experience. Use the rules outlined in this design system to create new features or functionality to ensure a consistent user experience. </description>
         <description>The design team uses specific language when referring to specific locations/modules/screens in the app. The figure below describes these nicknames.</description>
@@ -38,20 +38,29 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
             <h3>Types of Buttons</h3>
             <h4>Text buttons</h4>
             <description>Text buttons are text only buttons. They lay flat on the same plane as the main interface, and are commonly used in dialogs, nav bars, etc.</description>
+            <div class="flex-example small">
             <img src="{{ "/img/text-buttons.png" | prepend: site.baseurl }}" width="300px">
+            </div>
             
             <h4>Floating buttons</h4>
             <description>Floating buttons represents the primary action in an application. They are on the highest layer in the hierarchy, and cast a drop shadow on the interface below. </description>
+            <div class="flex-example small">
             <img src="{{ "/img/floating-buttons.png" | prepend: site.baseurl }}" width="150px">
+            </div>
 
             <h4>Full buttons</h4>
             <description>Full buttons are rectangular buttons with rounded corners. They consist of text and a solid colored rectangular background. They are not raised and lay on the same plane as the main interface. Due to mobile behaviour, there are no post-interaction animations associated with these buttons (darkening). </description>
+            <div class="flex-example medium">
             <img src="{{ "/img/full-buttons.png" | prepend: site.baseurl }}" width="350px">
+            </div>
             
             <h3>Hierarchies</h3>
             <description>In situations where decision making is involved on the user's part, with one being the prominent option, button hierarchy is required. The primary action is the button that is considered the preferred action. </description> 
             <description>For example, when a user is trying to delete an exercise entry, "Cancel" would be treated as the primary action, and would be given more visual prominence. In the case of dialog text buttons, the primary action should be on the right hand side of the dialog.</description>
             <description>In the case of full buttons, the primary action should be described in the blue rectangular button, with the secondary action appearing below as a text button. </description>
+            <div class="flex-example medium">
+                <img src="{{ "/img/full-buttons.png" | prepend: site.baseurl }}" width="350px">
+            </div>
         </div>
     </section>
     
@@ -59,25 +68,32 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
     <section id="cards">
         <h2>Cards</h2>
         <div class="section-container">
-        <description>Buttons are tactile elements in UI that users can interact with to perform a specific function. Well designed buttons give users foresight into what the intended purpose of the button is prior to the interaction, and provide feedback after the button has been pressed.</description>
+        <description>Cards are a convenient means of displaying and organizing content composed of a number of different elements. They serve as an entry point for users to either receive more information or gain access to more interactions with a more detailed panel. Cards may contain an image, text, and actions about the subject.</description>
         
-        <h3>Types of Buttons</h3>
-        <h4>Text buttons</h4>
-        <description>Text buttons are text only buttons. They lay flat on the same plane as the main interface, and are commonly used in dialogs, nav bars, etc.</description>
-        <img src="{{ "/img/text-buttons.png" | prepend: site.baseurl }}" width="300px">
-        
-        <h4>Floating buttons</h4>
-        <description>Floating buttons represents the primary action in an application. They are on the highest layer in the hierarchy, and cast a drop shadow on the interface below. </description>
-        <img src="{{ "/img/floating-buttons.png" | prepend: site.baseurl }}" width="150px">
+        <h3>Usages</h3>
+            <div class="flex-example flex-3 large">
+                <img src="{{ "/img/cards-1.png" | prepend: site.baseurl }}">
+                <img src="{{ "/img/cards-2.png" | prepend: site.baseurl }}">
+                <img src="{{ "/img/cards-3.png" | prepend: site.baseurl }}">
+            </div>
+        <h3>Content</h3>
+        <description>Hierarchy should be used within the card to promote legibility. By placing the most important information at the top of the card would draw the user’s attention. Typography should be appropriately used to emphasize the level of informational importance. </description>
+        <description>Background images should not be used in the cards where texts occupy the same space.</description>
 
-        <h4>Full buttons</h4>
-        <description>Full buttons are rectangular buttons with rounded corners. They consist of text and a solid colored rectangular background. They are not raised and lay on the same plane as the main interface. Due to mobile behaviour, there are no post-interaction animations associated with these buttons (darkening). </description>
-        <img src="{{ "/img/full-buttons.png" | prepend: site.baseurl }}" width="350px">
+        <h3>Actions</h3>
+        <description>The primary action in a card is typically content exploration or interaction. Cards serve as a “summary window” upon which the executive information is displayed. By tapping on the card the main UI should transform into one in which more details and interactions will be available to the user.</description>
         
-        <h3>Hierarchies</h3>
-        <description>In situations where decision making is involved on the user's part, with one being the prominent option, button hierarchy is required. The primary action is the button that is considered the preferred action. </description> 
-        <description>For example, when a user is trying to delete an exercise entry, "Cancel" would be treated as the primary action, and would be given more visual prominence. In the case of dialog text buttons, the primary action should be on the right hand side of the dialog.</description>
-        <description>In the case of full buttons, the primary action should be described in the blue rectangular button, with the secondary action appearing below as a text button. </description>
+        <h4>Examples</h4>
+        <ul>
+            <li>Tapping on the task card allows the user to log their meals</li>
+            <li>Tapping on a recipe card opens up a full activity that provides the user with more actions and details surrounding the recipe</li>
+        </ul>
+
+
+        <h4>Supplemental actions</h4>
+        <description>Supplemental actions are interactions within the cards that have explicit visual indicators which gives users an overview of their functionality. These actions include text links, progress sliders, selectors, icon buttons, etc.</description>
+        <description>The supplementary actions occupy a separate row of action area from the main interactions.</description>
+        <description>Universally shared actions such as close and back are not considered supplemental actions and could coexist in the same real estate as the main card content.
 
         </div>
     </section>

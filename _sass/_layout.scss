@@ -7,8 +7,10 @@
  }
 
  .wrapper-test {
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 20px 20px 0 245px;
+    width: 90%;
+    max-width: 1400px;
 
     @include media-query($desktopXL) {
         position: relative;
@@ -48,6 +50,34 @@ section img {
 
 .hiddenDiv {
     display: none;
+}
+
+.flex-example {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 3px $grey_2;
+    border-radius: 2px;
+    padding: 32px;
+    margin: 24px auto;
+    box-shadow: 0px 1px 3px #D5D5D5;
+    border-radius: 2px;
+    img {
+        margin: $spaceM;
+    }
+    &.flex-3 img{
+        max-width: 30%;
+    }
+    &.small {
+        width: 40%;
+    }
+    &.medium {
+        width: 60%;
+    }
+    &.large {
+        width: 80%;
+    }
 }
 
 .landing-logo
@@ -425,7 +455,7 @@ description {
 }
 section {
     background-color: $white;
-    padding: $spaceM;
+    padding: $spaceL;
     box-shadow: 0px 1px 3px $grey_2;
 
     .section-container {
