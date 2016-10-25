@@ -22,17 +22,14 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
     <!-- General -->
     <section id="intro">
         <h2>Introduction</h2>
-        <div class="section-container">
         <description>The Noom design system is comprised of a series of page design elements and modules which work together to shape the Noom experience. Use the rules outlined in this design system to create new features or functionality to ensure a consistent user experience. </description>
         <description>The design team uses specific language when referring to specific locations/modules/screens in the app. The figure below describes these nicknames.</description>
             <img src="{{ "/img/applayout.png" | prepend: site.baseurl }}" class="twox">
-        </div>
     </section>
 
     <!-- Buttons -->
     <section id="buttons">
         <h2>Buttons</h2>
-        <div class="section-container">
             <description>Buttons are tactile elements in UI that users can interact with to perform a specific function. Well designed buttons give users foresight into what the intended purpose of the button is prior to the interaction, and provide feedback after the button has been pressed.</description>
             
             <h3>Types of Buttons</h3>
@@ -61,13 +58,11 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
             <div class="flex-example medium">
                 <img src="{{ "/img/full-buttons.png" | prepend: site.baseurl }}" width="350px">
             </div>
-        </div>
     </section>
     
-    <!-- Buttons -->
+    <!-- Cards -->
     <section id="cards">
         <h2>Cards</h2>
-        <div class="section-container">
         <description>Cards are a convenient means of displaying and organizing content composed of a number of different elements. They serve as an entry point for users to either receive more information or gain access to more interactions with a more detailed panel. Cards may contain an image, text, and actions about the subject.</description>
         
         <h3>Usages</h3>
@@ -83,30 +78,221 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
         <h3>Actions</h3>
         <description>The primary action in a card is typically content exploration or interaction. Cards serve as a “summary window” upon which the executive information is displayed. By tapping on the card the main UI should transform into one in which more details and interactions will be available to the user.</description>
         
-        <h4>Examples</h4>
+        <h4>Usages</h4>
         <ul>
             <li>Tapping on the task card allows the user to log their meals</li>
             <li>Tapping on a recipe card opens up a full activity that provides the user with more actions and details surrounding the recipe</li>
         </ul>
 
-
         <h4>Supplemental actions</h4>
         <description>Supplemental actions are interactions within the cards that have explicit visual indicators which gives users an overview of their functionality. These actions include text links, progress sliders, selectors, icon buttons, etc.</description>
         <description>The supplementary actions occupy a separate row of action area from the main interactions.</description>
-        <description>Universally shared actions such as close and back are not considered supplemental actions and could coexist in the same real estate as the main card content.
+        <description>Universally shared actions such as close and back are not considered supplemental actions and could coexist in the same real estate as the main card content.</description>
+    </section>
 
+    <!-- Dialogs -->
+    <section id="dialogs">
+        <h2>Dialogs</h2>
+        <description>Dialogs inform users about critical information, and sometimes require decision input, or involve multiple tasks. Dialogs usually contain text, occasionally images, and often buttons or navigation elements. </description>
+        <description>They should occupy the center of an user’s attention until it has been dismissed or a required action has been taken.</description>
+        
+        <h3>Fullscreen modal</h3>
+        <description>Fullscreen modals is a dialog type that acts as an overlay over the entire screen.  Commonly used to accommodate for Call-to-Action related screens.</description>
+
+        <h4>Actions</h4>
+        <description>Fullscreen modals typically contain no internal navigation. Their main usage is to present the users with a large amount of information. A single or at most two call-to-action buttons should appear on the bottom of the fullscreen modal to lead the user away from the modal panel.</description>
+        <description>Links are often included on fullscreen modals that leads the user to external workflows (calorie breakdown analysis). </description>
+        
+        <h4>Usages</h4>
+        <ul>
+            <li>Coach weight customization quiz flow</li>
+            <li>Program selection quiz flow</li>
+            <li>Meal feedback “achievement” screen</li>
+            <li>Meal reminder screen</li>
+            <li>Recipe cards</li>
+        </ul>
+        <div class="flex-example flex-3 large">
+            <img src="{{ "/img/fullscreen-1.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/fullscreen-2.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/fullscreen-3.png" | prepend: site.baseurl }}">
+        </div>
+
+        <h3>Gopher modal</h3>
+        <description>Gopher modals are windows that give users the perception of a drag-down. These modals can be overlapped on top of one-another depending on the workflow requirements. Gopher modals are “anchored” to the bottom of the page.</description>
+        <description>The content of these gopher modals span a very broad range, but the one thing they all have in common is the drag-down button on the top of the modal. This button allows users to dismiss the gopher modals whenever they choose.</description>
+
+        <h4>Actions</h4>
+        <description>The main purpose of a gopher modal is to present users with high-level information about a particular subject, and ask the user to quickly input decisions based on the prompt given.</description>
+        <description>Due to this behaviour, the content of gopher modals are typically not of high priority, and the input could be delayed based on the user’s discretion.</description>
+        
+        <h4>Usages</h4>
+        <ul>
+            <li>Exercise tracking</li>
+            <li>Steps counter</li>
+            <li>Meal logging</li>
+            <li>Blood pressure tracking</li>
+            <li>Weight tracking</li>
+            <li>Food logging custom units </li>
+            <li>Group user info</li>
+        </ul>
+
+        <h3>Full activity</h3>
+        <description>Full activities are dialogs that replace the entire screen. These dialogs overrides the current active window.</description>
+
+        <h4>Usages</h4>
+        <ul>
+            <li>Noom articles</li>
+            <li>Blood glucose tracking on Android</li>
+        </ul>        
+
+        <div class="flex-example small">
+        <img src="{{ "/img/full-activity.png" | prepend: site.baseurl }}"">
+        </div>
+
+        <h3>Toaster notifications</h3>
+
+        <h3>Alert dialog</h3>
+        <description>System texts that provide simple information to the user. Some of these dialog prompts require no interactivity or decisions to be made from the user’s part. Generally try to avoid using these in designs as they are usually reserved for lower priority decisions.</description>
+        <div class="flex-example small">
+        <img src="{{ "/img/text-buttons.png" | prepend: site.baseurl }}" width="300px">
         </div>
     </section>
 
-    <!-- Text -->
-    <section id="text">
-        <h2>Text</h2>
-        <div class="section-container">
+    <!-- Icons -->
+    <section id="icons">
+        <h2>Icons</h2>
+    </section>
+
+    <!-- Illustrations -->
+    <section id="illustrations">
+        <h2>Illustrations</h2>
+    </section>
+
+    <!-- Infographics -->
+    <section id="infographics">
+        <h2>Infographics</h2>
+        <description>Infographics are visual graphics that digests data and communicates high-level information about the data to the users. They appear in the application in a variety of forms, and are not directly interactable. </description>
+        <description>The appearance of infographics can be altered by changing the parameters related to the graphics, but must be done from outside of the image itself. For design and development purposes, infographics are not directly interactable. The main forms in which the infographics take on are bar graphs, data sliders, and scatter plots.</description>
+        
+        <h3>Bar graph</h3>
+        <description>These infographics appear as stacked bar graphs. Most notable use for this application is in the calories breakdown graphics under the analysis section in food logging.</description>
+        <description>The segments within each bar is represented by the relative amount of calories each food contains compared to the total amount calorie intake.</description>
+        <div class="flex-example small">
+            <img src="{{ "/img/bar-graph.png" | prepend: site.baseurl }}">
+        </div>
+
+        <h3>Data slider</h3>
+        <description>Data sliders are used in a number of locations, each with an altered appearance.</description>
+        
+        <div class="flex-example flex-3 large">
+            <img src="{{ "/img/dataslider-1.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/dataslider-2.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/dataslider-3.png" | prepend: site.baseurl }}">
+        </div>
+    </section>
+
+    <!-- Inputs -->
+    <section id="inputs">
+        <h2>Inputs</h2>
+    </section>
+
+    <!-- Lists -->
+    <section id="lists">
+        <h2>Lists</h2>
+        <description>These contain an ordered list of options, items, or tasks. In task lists, the items are ordered in chronological order. In food logging, the items are ordered in alphabetical order. User are organized by alphabetical order in Coach groups. </description>
+        <description>Note that list items can contain texts, icons, interactable components such as checkboxes, or combinations of the three. </description>
+
+        <h3>Usages</h3>
+        <div class="flex-example flex-3 large">
+            <img src="{{ "/img/lists-1.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/lists-2.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/lists-3.png" | prepend: site.baseurl }}">
+        </div>
+    </section>
+
+    <!-- Menus -->
+    <section id="menus">
+        <h2>Menus</h2>
+        <description>Menus display a list of choices on a dropdown. They typically appear after interaction with a button. They display a one choice per line on a sheet of card-like material.</description>
+        <h3>Usages</h3>
+        <description>There should at least be three or more items for a menu to be considered appropriately used. </description>
+        <description>If there are two or fewer items in a menu dropdown, consider using icons or links instead to represent the options. </description>
+        <description>Menus should contain links to pages that are secondary to the screen’s function, and should not be the primary way for users to navigate the app. Navigation menus or tabs should be used instead for navigation to important pages. </description>
+        <div class="flex-example flex-2 large">
+            <img src="{{ "/img/menus-1.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/menus-2.png" | prepend: site.baseurl }}">
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section id="navigation">
+        <h2>Navigation</h2>
+        <description>Navigation behavior should be consistent and easily accessible and visible to the user. These elements should be placed in intuitive and predictable locations so new and returning users could move through the app with ease.</description>
+        
+        <h3>Nav bar</h3>
+        <description>The nav bar serves as a hub to house navigation elements such as tabs, menus, and back buttons to allow users to move through the app. </description>
+
+        <h3>Headline</h3>
+        <h4>Android behaviour</h4>
+        <h4>iOS behaviour</h4>
+
+        <h3>Tabs</h3>
+        <description>Tabs allows users to make horizontal navigations. Tabs offer menu options that are parallel in the hierarchy. </description>
+        <description>They are often used to display different views. For example tabs allows the user to switch between Breakfast, Lunch, and Dinner for recipes selection.</description>
+
+        <h4>Usages</h4>
+        <ul>
+            <li>Food logging method selection</li>
+            <li>Recipes menu filter</li>
+        </ul>
+        <div class="flex-example flex-2 large">
+            <img src="{{ "/img/tabs-1.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/tabs-2.png" | prepend: site.baseurl }}">
+        </div>
+
+        <h3>Back</h3>
+        <description>The back button returns the user vertically up by one level. It navigates upwards in the app’s hierarchy until the home screen is reached. </description>
+        <h4>Android behaviour</h4>
+        <h4>iOS behaviour</h4>
+        <!-- Guideline for physical up button and back button
+        - write separate sections for Android and iOS
+        - construct the guidelines with adherence to Google's mat design guidelines -->
+        
+        <h3>Close</h3>
+        <description>The close button returns the user to the highest level of vertical hierarchy that is present. Typically it will close the entire work flow and return the user to the home screen. </description>
+        <h4>Usages</h4>
+    </section>
+
+    <!-- Progress indicator -->
+    <section id="progress">
+        <h2>Progress indicator</h2>
+        <description>Progress indicators are the UI elements that provides users with an visual indication of the progress in an operation.</description>
+        
+        <h3>Linear</h3>
+        <description>Linear progress are horizontal bars that increase in meter as more values are entered. These bars should never decrease in value.</description>
+
+        <h4>Usages</h4>
+        <ul>
+            <li>Calorie tracking</li>
+            <li>Pedometer exercise tracking</li>
+        </ul>
+        <div class="flex-example flex-2 large">
+            <img src="{{ "/img/dataslider-2.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/dataslider-3.png" | prepend: site.baseurl }}">
+        </div>
+
+        <h3>Linear</h3>
+        <description>Awaiting implementation.</description>
+        <h4>Usages</h4>
+    </section>
+
+    <!-- Type -->
+    <section id="type">
+        <h2>Type</h2>
             <description>As outlined in the Brand Guide, the only typeface used is Roboto. The font color, size and weight depends on each use case, and is outlined below. Note that the default color for text colors is grey.</description>
             <div class="color-container primary">
                 <div class="color-swatch primary grey_6"></div>
             </div>
-        </div>
         <h3>Heading</h3>
         <h3>Sub-Heading</h3>
         <h3>Body</h3>
@@ -129,27 +315,5 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
         <a class="button" href="{{ "/img/spacing_font_sizes.pdf " | prepend: site.baseurl }}">&#11015; Download font size chart</a>
     </section>
 
-    <section id="icons">
-        <h2>Icons</h2>
-    </section>
 
-    <section id="illustrations">
-        <h2>Illustrations</h2>
-    </section>
-
-    <section id="inputs">
-        <h2>Inputs</h2>
-    </section>
-
-    <section id="appbar">
-        <h2>App Bar</h2>
-    </section>
-
-    <section id="gophers">
-        <h2>Gophers</h2>
-    </section>
-
-    <section id="fsmodals">
-        <h2>Full Screen Modals</h2>
-    </section>
 </div>
