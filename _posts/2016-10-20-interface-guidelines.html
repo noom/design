@@ -194,6 +194,47 @@ description: Detailed guidelines for standardizing the Noom UI across platforms.
     <!-- Inputs -->
     <section id="inputs">
         <h2>Inputs</h2>
+        <description>The input controls allow users to make a decision or indicate preferences when presented with different options. </description>
+        
+        <h3>Checkboxes</h3>
+        <description>Checkboxes allow users to select multiple options from a list. These are best used for a list of options that could be categorized under a single series. </description>
+        <description>For single options, the on/off switches should be used instead. </description>
+        <div class="flex-example small">
+            <img src="{{ "/img/checkboxes.png" | prepend: site.baseurl }}">
+        </div>
+        
+        <h3>Forms</h3>
+
+        <h3>Radio buttons</h3>
+        <description>Radio buttons are used when the users are required to select one option from a set of options. These are best reserved for selecting one option out of a series of mutually exclusive options. </description>
+        <description>Radio buttons are best used for situations where it is important for users to see and compare all the options simultaneously.</description>
+        <description>Segmented controls have similar functionalities as radio buttons as they allow users to select one option out of a series. Radio buttons should be used for lengthier option descriptions, and options with three or more options. For simpler (often one-word) and fewer (less than three) options, segmented controls should be used.</description>
+
+        <div class="flex-example small">
+            <img src="{{ "/img/radio.png" | prepend: site.baseurl }}">
+        </div>
+
+        <h3>Segmented control</h3>
+        <description>A segmented control is a set of two or more options, each of which functions as a mutually exclusive option. The buttons can contain texts or icons.</description>
+        <description>The selection option should be highlighted in a way that makes intuitive sense to the user. </description>
+        <description>Segmented controls are most appropriately used for simpler options that have short descriptions. For a series of options that contain longer names, radio button options should be opted instead.</description>
+
+        <div class="flex-example flex-2 large">
+            <img src="{{ "/img/segmented-1.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/segmented-2.png" | prepend: site.baseurl }}">
+        </div>
+
+        <h3>Switches</h3>
+        <description>Switches toggle the state of a single settings option. These switches allow users to make binary selections between the On and Off states. The On state for the switches appear illuminated. In the Off state, the switches fade out to show that it is inactive.</description>
+        <div class="flex-example flex-2 large">
+            <img src="{{ "/img/switches-1.png" | prepend: site.baseurl }}">
+            <img src="{{ "/img/switches-2.png" | prepend: site.baseurl }}">
+        </div>
+
+        <h3>Tape</h3>
+        <description>There are two main components to a “tape”. The unit selector and the number scroller. The increments on the number scroller changes dynamically depending on the unit that’s chosen. In a couple of cases however, the unit selector is not required when there is only one recognized unit (year in age selection, and mmHg in blood pressure logging).</description>
+        <description>In most cases the increments for the different units are chosen intuitively. The segments should mimic what one would expect if weights could be measured using a ruler. </description>
+
     </section>
 
     <!-- Lists -->
