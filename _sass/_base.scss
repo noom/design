@@ -118,19 +118,19 @@ h4 {
     margin-bottom: $spaceM;
 }
 
-.light {
+typeSample.light {
     font-weight: 300;
 }
 
-.regular {
+typeSample.regular {
     font-weight: 400;
 }
 
-.medium {
+typeSample.medium {
     font-weight: 500;
 }
 
-.bold {
+typeSample.bold {
     font-weight: 700;
 }
 
@@ -183,7 +183,6 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
 }
 
 code {
@@ -192,7 +191,6 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
 
     > code {
         border: 0;
@@ -201,6 +199,19 @@ pre {
     }
 }
 
+td {
+    padding: $spaceM $spaceL;
+}
+table {
+    width: 100%;
+}
+th {
+    font-weight: 500;
+}
+
+xmp {
+    font-size: 15px;
+}
 
 
 /**

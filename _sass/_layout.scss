@@ -34,7 +34,7 @@ section li {
 }
 
 section img {
-    margin-bottom: $spaceL;
+    // margin-bottom: $spaceL;
 }
 
 .page-content {
@@ -60,14 +60,23 @@ section img {
     justify-content: center;
     box-shadow: 0px 1px 3px $grey_2;
     border-radius: 2px;
-    margin: 24px auto;
+    margin: $spaceXL auto;
     box-shadow: 0px 1px 3px #D5D5D5;
     border-radius: 2px;
+    padding: 24px;
     img {
         margin: $spaceM auto;
+        padding: none;
+    }
+    &.column {
+        flex-direction: column;
     }
     captionText {
+        margin-top: $spaceM;
         margin-bottom: $spaceM;
+    }
+    & #typesample-first {
+        margin-top: 24px;
     }
     &.flex-3 img{
         max-width: 30%;

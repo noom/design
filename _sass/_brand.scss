@@ -11,9 +11,118 @@ section {
       padding-left: 100px;
     }
   }
+  ul.brand-values {
+    display: block;
+    padding: 0 0 0 6%;
+    list-style: none;
+    overflow: hidden;
+    & li {
+      position: relative; 
+      line-height: 36px;
+      margin-bottom: 36px;
+      max-width: 90%;
+      padding-left: 12px;
+    }
+  }
+
+  ul.brand-values li:before {
+    content: '\f00c';
+    float: left;
+    position: absolute;
+    left: -6%;
+    top: 31%;
+    font: normal normal normal 24px/1 FontAwesome;
+    text-align: center;
+    color: #fff;
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
+    background: #fedd3c;
+
+    -moz-border-radius: 999px;
+    border-radius: 999px
+  }
+
+  ul.brand-test {
+    display: block;
+    padding: 0 0 0 6%;
+    list-style: none;
+    overflow: hidden;
+    & li {
+      position: relative; 
+      line-height: 36px;
+      margin-bottom: 36px;
+      max-width: 90%;
+      padding-left: 12px;
+    }
+  }
+
+  ul.brand-test {
+    & li.apple::before 
+    {
+        background: #16AA00;
+        content: '\f00c';
+        float: left;
+        position: absolute;
+        left: -6%;
+        top: 40%;
+        font: normal normal normal 24px/1 FontAwesome;
+        text-align: center;
+        color: #fff;
+        line-height: 34px;
+        width: 34px;
+        height: 34px;
+        -moz-border-radius: 999px;
+        border-radius: 999px;
+    }
+    & li.cherry::before 
+    {
+        background: #e73b37;
+        content: '\f00d';
+        float: left;
+        position: absolute;
+        left: -6%;
+        top: 40%;
+        font: normal normal normal 24px/1 FontAwesome;
+        text-align: center;
+        color: #fff;
+        line-height: 34px;
+        width: 34px;
+        height: 34px;
+        -moz-border-radius: 999px;
+        border-radius: 999px;
+    }
+  }
+
+  div.col-container {
+    display: flex;
+    width: 100%;
+    padding-bottom: 30px;
+    align-items: center;
+    & div.col-5 {
+      width: 50%;
+      padding-left: 70px;
+    }
+    & div.col-2 {
+      width: 20%;
+    }
+    & div.col-8 {
+      width: 80%;
+    }
+  }
+  ul.tone {
+    list-style: none;
+    margin-top: $spaceL;
+    & li {
+      margin-bottom: $spaceL;
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
 
   typeSample.headings {
     font-size: $fontH;
+    font-weight: 300;
   }
 
   typeSample.task-card {
@@ -23,13 +132,24 @@ section {
 
   typeSample.body-text {
     font-size: $fontM;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   typeSample.informational {
     font-size: $fontXXS;
     font-weight: 700;
     color: $brand-color;
+    text-transform: uppercase;
+  }
+
+  typeSample.subheading {
+    font-size: $fontXL;
+    font-weight: 300;
+  }
+
+  typeSample.detail {
+    font-size: $fontL;
+    font-weight: 500;
     text-transform: uppercase;
   }
 
@@ -73,18 +193,18 @@ section {
 
 
 // create all the colour classes to be applied for the colour swatches
-  @for $i from 1 through length($color_names) {
-    %#{nth($color_names, $i)} {
-      background-color: nth($color_vars, $i);
-    }
+@for $i from 1 through length($color_names) {
+  %#{nth($color_names, $i)} {
+    background-color: nth($color_vars, $i);
   }
+}
 
 .color-container {
   position: relative;
 
-    &.secondary {
-      max-width: 700px;
-    }
+  &.secondary {
+    max-width: 700px;
+  }
 
   .color-swatch {
     display: inline-block;
@@ -95,7 +215,7 @@ section {
 
 
     @include media-query($on-palm) {
-        margin-right: $spaceXXL;
+      margin-right: $spaceXXL;
     }
 
 
@@ -150,8 +270,8 @@ section {
 
         &:after {
          content: "#{$current_hex}";
-        }
-      }
-    }
-  }
+       }
+     }
+   }
+ }
 }
