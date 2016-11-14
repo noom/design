@@ -37,6 +37,11 @@ section img {
     // margin-bottom: $spaceL;
 }
 
+h1.sub-headline {
+    font-size: 22px;
+    color: #4d4d4d;
+}
+
 .page-content {
     height: 100%;
     @include media-query($tablet){
@@ -50,6 +55,20 @@ section img {
 
 .hiddenDiv {
     display: none;
+}
+
+p.caption {
+    font-size: 16px;
+    color: #969696;
+}
+p.footer {
+    font-size: 16px;
+    text-align: center;
+    color: $grey_6;
+}
+p.error-caption {
+    color: $watermelon;
+    font-size: 16px;
 }
 
 .flex-example {

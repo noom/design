@@ -1,0 +1,86 @@
+---
+layout: test
+title: "Web Style Guide"
+permalink: webstyle/
+displayInNav: true
+description: Detailed guidelines for standardizing the Noom UI for web deployments.
+---
+
+<div class="wrapper-test hiddenDiv" id="webstyle">
+    <section>
+        <h1>Web Component Guidelines</h1>
+        <description>
+            This section of the design guides aims to establish a development framework that helps create responsive layouts quickly and efficiently. The color and aesthetic suggestions are in line with the published brand guide. If you notice anything is wrong or needs to be changed, you can report an issue by bothering the DUX team (<a href="mailto:{{ site.email }}">{{ site.email }}</a>).
+        </description>
+    </section>
+
+    <section id="layout">
+        <h2>Layout</h2>
+        <description>The website layout follows a twelve column grid system.</description>
+
+        <div class="flex-example large">
+            <img src="{{ "/img/web.png" | prepend: site.baseurl }}">
+        </div>
+    </section>
+
+    <section id="typography">
+        <h2>Typography</h2>
+
+        <h3>General</h3>
+
+        <description>Roboto is our typeface. We use it mostly in the lighter weights &mdash; light, regular and medium. The font color, size and weight depends on each use case, and is outlined below. Note that the default color for text colors is grey (#4D4D4D).</description>
+
+        <div class="flex-example small column">
+            <typeSample class="big light" id="typesample-first">Roboto Light</typeSample>
+            <typeSample class="big regular">Roboto Regular</typeSample>
+            <typeSample class="big medium">Roboto Medium</typeSample> 
+            <typeSample class="big bold">Roboto Bold</typeSample>
+        </div>
+
+        <downloads>
+            <a class="button" href="{{ "/assets/roboto.zip" | prepend: site.baseurl }}">&#11015; Download Roboto</a>
+            <a class="button multiple" href="{{ "/img/spacing_font_sizes.pdf" | prepend: site.baseurl }}">&#11015; Download font size chart</a>
+        </downloads>
+
+        <h3>Hierarchy</h3>
+        
+        <div class="col-container">
+            <div class="col-3">
+                <h4>H1 Headline</h4>
+                <h1>Get ready to see results!</h1>
+                <br>
+
+                <h4>Sub-headline</h4>
+                <h1 class="sub-headline">You are moments away from your journey to life-long weight loss.</h1>
+                <br>
+
+                <h4>H2 Headline</h4>
+                <h2>Clinically proven to be 86% successful.</h2>
+                <br>
+
+                <h4>H3 Section header</h4>
+                <h3>Frequently Asked Questions</h3>
+                <br>
+
+                <h4>H4 Header</h4>
+                <h4>Weekly survey and challenge</h4>
+                <br>
+
+                <h4>Body text</h4>
+                <p>The mechanical eyes could also provide enhanced sight so cybernetic humans could see more of the electromagnetic spectrum.</p>
+                <br>
+
+                <h4>Description text/caption</h4>
+                <p class="caption">Type in the email address you used when you registered with Noom. We will send you a link to reset the password.</p>
+                <br>
+
+                <h4>Description text/caption</h4>
+                <p class="error-caption">An incorrect password has been entered.</p>
+                <br>
+
+                <h4>Footer text</h4>
+                <p class="footer">229 W 28th St, Floor 9, New York, NY 10001. Have a question? Drop us a line at <a>program-support@noom.com</a> or call (800) 910-7375.</p>
+            </div>
+        </div>
+    </section>
+</div>
