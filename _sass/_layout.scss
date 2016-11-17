@@ -70,7 +70,9 @@ p.error-caption {
     color: $watermelon;
     font-size: 16px;
 }
-
+.syntaxhighlighter {
+    // max-width: 700px;
+}
 .flex-example {
     display: flex;
     flex-direction: row;
@@ -87,10 +89,15 @@ p.error-caption {
         margin: $spaceM auto;
         padding: none;
     }
+    p {
+        width: 100%;
+    }
     &.column {
         flex-direction: column;
     }
     captionText {
+        text-align: center;
+        width: 100%;
         margin-top: $spaceM;
         margin-bottom: $spaceM;
     }
@@ -112,7 +119,11 @@ p.error-caption {
     &.large {
         width: 80%;
     }
+    &.left {
+        margin-left: 0;
+    }
 }
+
 
 .landing-logo
 {

@@ -174,37 +174,12 @@ blockquote {
     }
 }
 
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 td {
     padding: $spaceM $spaceL;
+    text-align: left;
 }
 table {
-    width: 100%;
+    width: 80%;
 }
 th {
     font-weight: 500;
@@ -212,8 +187,14 @@ th {
 
 xmp {
     font-size: 15px;
+    &.css {
+        text-align: left;
+    }
 }
 
+downloads {
+    margin: auto;
+}
 
 /**
  * Wrapper

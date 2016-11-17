@@ -26,7 +26,7 @@ description: Detailed guidelines for standardizing the Noom UI for web deploymen
     <section id="typography">
         <h2>Typography</h2>
 
-        <h3>General</h3>
+        <h3>Typeface</h3>
 
         <description>Roboto is our typeface. We use it mostly in the lighter weights &mdash; light, regular and medium. The font color, size and weight depends on each use case, and is outlined below. Note that the default color for text colors is grey (#4D4D4D).</description>
 
@@ -42,45 +42,123 @@ description: Detailed guidelines for standardizing the Noom UI for web deploymen
             <a class="button multiple" href="{{ "/img/spacing_font_sizes.pdf" | prepend: site.baseurl }}">&#11015; Download font size chart</a>
         </downloads>
 
-        <h3>Hierarchy</h3>
-        
-        <div class="col-container">
-            <div class="col-3">
-                <h4>H1 Headline</h4>
-                <h1>Get ready to see results!</h1>
-                <br>
+        <h3>H1 Headline</h3>
 
-                <h4>Sub-headline</h4>
-                <h1 class="sub-headline">You are moments away from your journey to life-long weight loss.</h1>
-                <br>
-
-                <h4>H2 Headline</h4>
-                <h2>Clinically proven to be 86% successful.</h2>
-                <br>
-
-                <h4>H3 Section header</h4>
-                <h3>Frequently Asked Questions</h3>
-                <br>
-
-                <h4>H4 Header</h4>
-                <h4>Weekly survey and challenge</h4>
-                <br>
-
-                <h4>Body text</h4>
-                <p>The mechanical eyes could also provide enhanced sight so cybernetic humans could see more of the electromagnetic spectrum.</p>
-                <br>
-
-                <h4>Description text/caption</h4>
-                <p class="caption">Type in the email address you used when you registered with Noom. We will send you a link to reset the password.</p>
-                <br>
-
-                <h4>Description text/caption</h4>
-                <p class="error-caption">An incorrect password has been entered.</p>
-                <br>
-
-                <h4>Footer text</h4>
-                <p class="footer">229 W 28th St, Floor 9, New York, NY 10001. Have a question? Drop us a line at <a>program-support@noom.com</a> or call (800) 910-7375.</p>
-            </div>
+        <h4>Example</h4>
+        <div class="flex-example medium left">
+            <h1>Get ready to see immediate results!</h1>
+            <captionText>H1 Headline</captionText>
         </div>
+
+        <h4>Source</h4>
+        <pre class="brush: xml"><h1>Get ready to see immediate results!</h1></pre>
+        <br>
+
+        <h3>Sub-headline</h3>
+        <div class="flex-example medium left">
+            <h1 class="sub-headline">You are moments away from your journey to life-long weight loss.</h1>
+            <captionText>Sub-headline</captionText>
+        </div>
+
+        <h4>Source</h4>
+        <pre class="brush: xml"><h1 class="sub-headline">You are moments away from your journey to life-long weight loss.</h1></pre>
+        <br>
+
+        <h3>H2 Headline</h3>
+            <div class="flex-example medium left">
+                <h2>Clinically proven to be 86% successful.</h2>
+                <captionText>H2 Headline</captionText>
+            </div>
+        <h4>Source</h4>
+        <pre class="brush: xml"><h2>Clinically proven to be 86% successful.</h2></pre>
+        <br>
+        <br>
+
+        <h3>H3 Section header</h3>
+            <div class="flex-example medium left">
+                <h3>Frequently Asked Questions</h3>
+                 <captionText>H3 Section header</captionText>
+            </div>
+        <h4>Source</h4>
+        <pre class="brush: xml"><h3>Frequently Asked Questions</h3></pre>
+        <br>
+        <br>
+
+        <h3>H4 Header</h3>
+            <div class="flex-example medium left">
+                <h4>Daily content articles to help you learn!</h4>
+                <captionText>H4 Header</captionText>
+            </div>
+        <h4>Source</h4>
+        <pre class="brush: xml"><h4>Daily content articles to help you learn!</h4></pre>
+        <br>
+        <br>
+
+        <h3>Body text</h3>
+            <div class="flex-example medium left">
+                <p>The mechanical eyes could also provide enhanced sight so humans could see more of the electromagnetic spectrum, including colors previous invisible to the human eye.</p>
+                <captionText>Body text</captionText>
+            </div>
+        <h4>Source</h4>
+        <pre class="brush: xml"><p>The mechanical eyes ... human eye.</p></pre>
+        <br>
+        <br>
+
+        <h3>Description text/caption</h3>
+            <div class="flex-example medium left">
+                <p class="caption">Type in the email address you used when you registered with Noom. We will send you a link to reset the password.</p>
+                <captionText>Description text/caption</captionText>
+            </div>
+        <h4>Source</h4>
+        <pre class="brush: xml"><p class="caption">Type in the email ... to reset the password.</p></pre>
+        <br>
+        <br>
+
+        <h3>Error text/caption</h3>
+            <div class="flex-example small left">
+                <p class="error-caption">An incorrect password has been entered.</p>
+                <captionText>Error text/caption</captionText>
+            </div>
+        <h4>Source</h4>
+        <pre class="brush: xml"><p class="error-caption">An incorrect password has been entered, please try again.</p></pre>
+        <br>
+        <br>
+
+        <h3>Footer text</h3>
+            <div class="flex-example medium left">
+                <p class="footer">229 W 28th St, Floor 9, New York, NY 10001. Have a question? Drop us a line at <a>program-support@noom.com</a> or call (800) 910-7375.</p>
+                <captionText>Footer text</captionText>
+            </div>
+        <h4>Source</h4>
+        <pre class="brush: xml"><p class="footer">229 W 28th St ... a question? Drop us a line at <a>program-support@noom.com</a> or call (800) 910-7375.</p></pre>
+        <br>
+    </section>
+
+    <section id="buttons">
+        <h2>Buttons</h2>
+        <description>This section showcases button behavior and stylings.</description>
+        <h3>CTA/Primary Buttons</h3>
+        <div class="section-container">
+            <description>The sections above display the font styles that are available. Here, we outline the type styles that are employed throughout the app. The uses of the different type styles should remain consistent across the app and cross platform.</description>
+            <div class="flex-example medium left">
+                <button class="button-primary">Start 14 day trial now</button>
+                <captionText>Default button</captionText>
+            </div>
+            <h4>Source</h4>
+            <pre class="brush: xml"><button class="button-primary">Start 14 day trial now</button></pre>
+
+            <div class="flex-example medium left">
+                <button class="button-primary disabled">Start 14 day trial now</button>
+                <captionText>Default button</captionText>
+            </div>
+            <h4>Source</h4>
+            <pre class="brush: xml"><button class="button-primary disabled">Start 14 day trial now</button></pre>
+        </div>
+
+        <h3>Secondary Buttons</h3>
+        <H3>Text buttons</H3>
+        <h3>Icon buttons</h3>
+
+        
     </section>
 </div>
