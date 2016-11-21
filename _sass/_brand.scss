@@ -229,6 +229,25 @@ section {
       transition: all $transition-time;
     }
   }
+  a.button-primary {
+    display: inline-block;
+    font-size: $fontM;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $techypbr;
+    border-radius: 53px;
+    padding: 11px 24px;
+    width: auto;
+    max-width: 100%;
+    transition: all $transition-time;
+    &:hover {
+      background-color: $techypbr_6;
+      cursor: pointer;
+      transition: all $transition-time;
+    }
+  }
 }
 
 
