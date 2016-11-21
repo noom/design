@@ -138,26 +138,47 @@ description: Detailed guidelines for standardizing the Noom UI for web deploymen
         <h2>Buttons</h2>
         <description>This section showcases button behavior and stylings.</description>
         <h3>CTA/Primary Buttons</h3>
-        <div class="section-container">
-            <description>The sections above display the font styles that are available. Here, we outline the type styles that are employed throughout the app. The uses of the different type styles should remain consistent across the app and cross platform.</description>
+            <description>This section showcases the different button stylings that are available as well as the different ways of rendering the UI componenets.</description>
+            <h4>Default button</h4>
             <div class="flex-example medium left">
                 <button class="button-primary">Start 14 day trial now</button>
-                <a class="button-primary">Start 14 day trial now</a>
-                <input type="submit" value="Start 14 day trial now">
-                <captionText>Default button</captionText>
+                <!-- <input type="submit" value="Start 14 day trial now"> -->
+                <captionText>Default appearance</captionText>
             </div>
             <h4>Source</h4>
             <pre class="brush: xml"><button class="button-primary">Start 14 day trial now</button></pre>
+            <pre class="brush: xml"><a class="button-primary">Start 14 day trial now</a></pre>
 
+            <br>
+            <h4>Disabled button</h4>
             <div class="flex-example medium left">
                 <button class="button-primary disabled">Start 14 day trial now</button>
-                <captionText>Default button</captionText>
+                <captionText>Disabled appearance</captionText>
             </div>
             <h4>Source</h4>
             <pre class="brush: xml"><button class="button-primary disabled">Start 14 day trial now</button></pre>
-        </div>
-
+            <pre class="brush: xml"><a class="button-primary disabled">Start 14 day trial now</a></pre>
+        <br><br>
         <h3>Secondary Buttons</h3>
+
+            <div class="flex-example medium left">
+                <button class="button-secondary">I'm the secondary button</button>
+                <!-- <input type="submit" value="Start 14 day trial now"> -->
+                <captionText>Default appearance</captionText>
+            </div>
+            <h4>Source</h4>
+            <pre class="brush: xml"><button class="button-secondary">I'm the secondary button</button></pre>
+            <pre class="brush: xml"><a class="button-secondary">I'm the secondary button</a></pre>
+
+            <div class="flex-example medium left">
+                <button class="button-secondary disabled">I'm the secondary Button</button>
+                <!-- <input type="submit" value="I'm the secondary button"> -->
+                <captionText>Disabled appearance</captionText>
+            </div>
+
+            <h4>Source</h4>
+            <pre class="brush: xml"><button class="button-secondary disabled">I'm the secondary button</button></pre>
+            <pre class="brush: xml"><a class="button-secondary disabled">I'm the secondary button</a></pre>
         <H3>Text buttons</H3>
         <h3>Icon buttons</h3>
 
