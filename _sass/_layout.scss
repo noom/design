@@ -140,6 +140,71 @@ p.error-caption {
 /**
  * Site left nav
  */
+  ul.primary-list {
+    display: block;
+    padding: 0 0 0 6%;
+    list-style: none;
+    overflow: hidden;
+    & li {
+      position: relative; 
+      margin-bottom: 36px;
+      max-width: 90%;
+      line-height: 27px;
+    }
+  }
+
+  ul.primary-list li:before {
+    content: '\f00c';
+
+    float: left;
+    position: absolute;
+    left: -6%;
+    top: 0.1em;
+
+    font: normal normal normal 24px/1 FontAwesome;
+    text-align: center;
+    color: $techypbr;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  ol.primary-list {
+    display: block;
+    padding: 0 0 0 6%;
+    list-style: none;
+    overflow: hidden;
+    counter-reset: numList;
+    & li {
+      position: relative; 
+      margin-bottom: 36px;
+      max-width: 90%;
+      line-height: 27px;
+    }
+  }
+
+  ol.primary-list li:before {
+    counter-increment: numList;
+    content: counter(numList);
+
+    float: left;
+    position: absolute;
+    left: -6%;
+    top: 0.2em;
+
+    font: 500 16px Roboto;
+    text-align: center;
+    color: #fff;
+    line-height: 23px;
+
+    width: 24px;
+    height: 24px;
+    background: $techypbr;
+
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+  }
+
 
 .in-page-nav-test {
     position: fixed;
