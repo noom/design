@@ -137,23 +137,24 @@ p.error-caption {
     display: block;
     margin: 50px auto;
 }
-/**
- * Site left nav
- */
-  ul.primary-list {
+
+// Lists
+
+// Unordered lists
+ul.primary-list {
     display: block;
-    padding: 0 0 0 6%;
+    padding: 0 0 0 5%;
     list-style: none;
     overflow: hidden;
     & li {
-      position: relative; 
-      margin-bottom: 36px;
-      max-width: 90%;
-      line-height: 27px;
+        position: relative; 
+        margin-bottom: 24px;
+        max-width: 90%;
+        line-height: 27px;
     }
-  }
+}
 
-  ul.primary-list li:before {
+ul.primary-list li:before {
     content: '\f00c';
 
     float: left;
@@ -167,23 +168,67 @@ p.error-caption {
     line-height: 24px;
     width: 24px;
     height: 24px;
-  }
+}
 
-  ol.primary-list {
+ul.description-list {
     display: block;
-    padding: 0 0 0 6%;
+    font-size: 16px;
+    color: $grey_4;
+    & li {
+        position: relative; 
+        margin-bottom: 8px;
+        max-width: 90%;
+        line-height: 27px;
+    }
+}
+
+ul.secondary-list {
+    display: block;
+    padding: 0 0 0 5%;
+    list-style: none;
+    font-size: 16px;
+    overflow: hidden;
+    & li {
+        position: relative; 
+        margin-bottom: 16px;
+        max-width: 90%;
+        line-height: 27px;
+    }
+}
+
+ul.secondary-list li:before {
+    content: '\f00c';
+
+    float: left;
+    position: absolute;
+    left: -6%;
+    top: 0.1em;
+
+    font: normal normal normal 22px/1 FontAwesome;
+    text-align: center;
+    color: $sun;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+
+// Ordered lists
+ol.primary-list {
+    display: block;
+    padding: 0 0 0 5%;
     list-style: none;
     overflow: hidden;
     counter-reset: numList;
     & li {
-      position: relative; 
-      margin-bottom: 36px;
-      max-width: 90%;
-      line-height: 27px;
+        position: relative; 
+        margin-bottom: 24px;
+        max-width: 90%;
+        line-height: 27px;
     }
-  }
+}
 
-  ol.primary-list li:before {
+ol.primary-list li:before {
     counter-increment: numList;
     content: counter(numList);
 
@@ -203,8 +248,72 @@ p.error-caption {
 
     -moz-border-radius: 999px;
     border-radius: 999px;
-  }
+}
 
+ol.description-list {
+    display: block;
+    font-size: 16px;
+    color: $grey_4;
+    & li {
+        position: relative; 
+        margin-bottom: 8px;
+        max-width: 90%;
+        line-height: 27px;
+    }
+}
+
+ol.secondary-list {
+    display: block;
+    padding: 0 0 0 5%;
+    list-style: none;
+    overflow: hidden;
+    font-size: 16px;
+    counter-reset: numList;
+    & li {
+        position: relative; 
+        margin-bottom: 16px;
+        max-width: 90%;
+        line-height: 27px;
+    }
+}
+
+ol.secondary-list li:before {
+    counter-increment: numList;
+    content: counter(numList);
+
+    float: left;
+    position: absolute;
+    left: -6%;
+    top: 0.2em;
+
+    font: 500 16px Roboto;
+    text-align: center;
+    color: #fff;
+    line-height: 23px;
+
+    width: 24px;
+    height: 24px;
+    background: $sun;
+
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+}
+
+div.default-well {
+    border-radius: 8px;
+    background-color: $pbr_1;
+    padding: 24px;
+    width: 100%;
+}
+div.small-well {
+    border-radius: 8px;
+    background-color: $pbr_1;
+    padding: 16px;
+    width: 100%;
+}
+/**
+ * Site left nav
+ */
 
 .in-page-nav-test {
     position: fixed;
